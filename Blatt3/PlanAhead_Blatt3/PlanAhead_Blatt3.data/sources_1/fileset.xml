@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmTypes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmTypes.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmRAMB_4kx8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRAMB_4kx8.vhd"/>
+        <Attr Name="ImportTime" Val="1479755382"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmRAMB_4kx32.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRAMB_4kx32.vhd"/>
+        <Attr Name="ImportTime" Val="1480626852"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmConfiguration.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmConfiguration.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmMemInterface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmMemInterface.vhd"/>
+        <Attr Name="ImportTime" Val="1480628135"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt3/ArmRamBuffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRamBuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ArmMemInterface"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="behave"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Blatt3/ArmMemInterface.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+</DARoots>

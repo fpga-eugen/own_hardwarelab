@@ -1,0 +1,155 @@
+
+*** Running xst
+    with args -ifn "ArmRAMB_4kx8.xst" -ofn "ArmRAMB_4kx8.srp" -intstyle ise
+
+Reading design: ArmRAMB_4kx8.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/HardwareLab/Blatt2/PlanAhead_Blatt2/PlanAhead_Blatt2.srcs/sources_1/imports/Blatt2/ArmRAMB_4kx8.vhd" in Library work.
+Entity <ArmRAMB_4kx8> compiled.
+Entity <ArmRAMB_4kx8> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ArmRAMB_4kx8> in library <work> (architecture <behavioral>) with generics.
+	SIZE = 4096
+	WIDTH = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ArmRAMB_4kx8> in library <work> (Architecture <behavioral>).
+	SIZE = 4096
+	WIDTH = 8
+Entity <ArmRAMB_4kx8> analyzed. Unit <ArmRAMB_4kx8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ArmRAMB_4kx8>.
+    Related source file is "C:/HardwareLab/Blatt2/PlanAhead_Blatt2/PlanAhead_Blatt2.srcs/sources_1/imports/Blatt2/ArmRAMB_4kx8.vhd".
+    Found 4096x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <DOA>.
+    Found 8-bit register for signal <DOB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ArmRAMB_4kx8> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x8-bit dual-port RAM                              : 1
+# Registers                                            : 2
+ 8-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ArmRAMB_4kx8>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <DOB> <DOA>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | no-change                           |          |
+    |     clkA           | connected to signal <RAM_CLK>       | rise     |
+    |     enA            | connected to signal <ENB>           | high     |
+    |     weA            | connected to signal <WEB>           | high     |
+    |     addrA          | connected to signal <ADDRB>         |          |
+    |     diA            | connected to signal <DIB>           |          |
+    |     doA            | connected to signal <DOB>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <RAM_CLK>       | rise     |
+    |     enB            | connected to signal <ENA>           | high     |
+    |     addrB          | connected to signal <ADDRA>         |          |
+    |     doB            | connected to signal <DOA>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ArmRAMB_4kx8> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x8-bit dual-port block RAM                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ArmRAMB_4kx8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+RAM_CLK                            | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.918ns
+   Maximum output required time after clock: 6.492ns
+   Maximum combinational path delay: No path found
+
+=========================================================================

@@ -1,0 +1,8 @@
+EN mux2 NULL C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/mux2.vhd sub00/vhpl02 1479583765
+EN arminstructionaddressregister NULL C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd sub00/vhpl06 1479583769
+AR mux2 behavioral C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/mux2.vhd sub00/vhpl03 1479583766
+AR armrambuffer behavioral C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmRamBuffer.vhd sub00/vhpl05 1479583768
+EN armrambuffer NULL C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmRamBuffer.vhd sub00/vhpl04 1479583767
+PB armtypes armtypes C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmTypes.vhd sub00/vhpl01 1479583764
+PH armtypes NULL C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmTypes.vhd sub00/vhpl00 1479583763
+AR arminstructionaddressregister behave C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd sub00/vhpl07 1479583770

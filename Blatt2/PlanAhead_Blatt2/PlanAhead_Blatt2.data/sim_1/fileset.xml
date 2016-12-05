@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ArmDataReplication"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="behave"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Blatt2/ArmDataReplication.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="SrcSet" Val="sources_1"/>
+    </Config>
+  </FileSet>
+</DARoots>

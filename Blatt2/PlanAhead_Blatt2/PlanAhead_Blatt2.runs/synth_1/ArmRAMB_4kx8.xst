@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn ArmRAMB_4kx8.prj
+-top ArmRAMB_4kx8
+-p xc3s500efg320-4
+-ofn ArmRAMB_4kx8.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

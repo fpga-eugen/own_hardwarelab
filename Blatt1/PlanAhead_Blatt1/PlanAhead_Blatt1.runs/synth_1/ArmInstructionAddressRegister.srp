@@ -1,0 +1,455 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.35 secs
+ 
+--> Reading design: ArmInstructionAddressRegister.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ArmInstructionAddressRegister.prj"
+
+---- Target Parameters
+Target Device                      : xc3s500efg320-4
+Output File Name                   : "ArmInstructionAddressRegister.ngc"
+
+---- Source Options
+Top Module Name                    : ArmInstructionAddressRegister
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmTypes.vhd" in Library work.
+Package <ArmTypes> compiled.
+Package body <ArmTypes> compiled.
+Compiling vhdl file "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/mux2.vhd" in Library work.
+Entity <mux2> compiled.
+Entity <mux2> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmRamBuffer.vhd" in Library work.
+Entity <ArmRamBuffer> compiled.
+Entity <ArmRamBuffer> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd" in Library work.
+Entity <ArmInstructionAddressRegister> compiled.
+Entity <ArmInstructionAddressRegister> (Architecture <behave>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ArmInstructionAddressRegister> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ArmRamBuffer> in library <work> (architecture <behavioral>) with generics.
+	ARB_ADDR_WIDTH = 3
+	ARB_DATA_WIDTH = 30
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ArmInstructionAddressRegister> in library <work> (Architecture <behave>).
+WARNING:Xst:1540 - "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd" line 71: Different binding for component: <mux2>. Ports <a,b,y> do not match.
+WARNING:Xst:1540 - "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd" line 79: Different binding for component: <mux2>. Ports <a,b,y> do not match.
+WARNING:Xst:1540 - "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd" line 90: Different binding for component: <mux2>. Ports <a,b,y> do not match.
+Entity <ArmInstructionAddressRegister> analyzed. Unit <ArmInstructionAddressRegister> generated.
+
+Analyzing Entity <mux2> in library <work> (Architecture <behavioral>).
+Entity <mux2> analyzed. Unit <mux2> generated.
+
+Analyzing generic Entity <ArmRamBuffer> in library <work> (Architecture <behavioral>).
+	ARB_ADDR_WIDTH = 3
+	ARB_DATA_WIDTH = 30
+Entity <ArmRamBuffer> analyzed. Unit <ArmRamBuffer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux2>.
+    Related source file is "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/mux2.vhd".
+Unit <mux2> synthesized.
+
+
+Synthesizing Unit <ArmRamBuffer>.
+    Related source file is "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmRamBuffer.vhd".
+    Found 8x30-bit single-port RAM <Mram_ARB_RAM> for signal <ARB_RAM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <ArmRamBuffer> synthesized.
+
+
+Synthesizing Unit <ArmInstructionAddressRegister>.
+    Related source file is "C:/HardwareLab/Blatt1/PlanAhead_Blatt1/PlanAhead_Blatt1.srcs/sources_1/imports/Blatt1/ArmInstructionAddressRegister.vhd".
+    Found 30-bit register for signal <Instruktionsadresse>.
+    Found 30-bit adder for signal <Instruktionsadresse_plus_one>.
+    Summary:
+	inferred  30 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ArmInstructionAddressRegister> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x30-bit single-port RAM                              : 1
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 1
+ 30-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ArmRamBuffer>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ARB_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 30-bit                     |          |
+    |     clkA           | connected to signal <ARB_CLK>       | rise     |
+    |     weA            | connected to signal <ARB_WRITE_EN>  | high     |
+    |     addrA          | connected to signal <ARB_ADDR>      |          |
+    |     diA            | connected to signal <ARB_DATA_IN>   |          |
+    |     doA            | connected to signal <ARB_DATA_OUT>  |          |
+    -----------------------------------------------------------------------
+Unit <ArmRamBuffer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x30-bit single-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 1
+ 30-bit adder                                          : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ArmInstructionAddressRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ArmInstructionAddressRegister.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 99
+
+Cell Usage :
+# BELS                             : 212
+#      GND                         : 2
+#      INV                         : 1
+#      LUT1                        : 29
+#      LUT3                        : 49
+#      LUT4                        : 60
+#      MUXCY                       : 29
+#      MUXF5                       : 11
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 30
+#      FDR                         : 30
+# RAMS                             : 30
+#      RAM16X1S                    : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 98
+#      IBUF                        : 38
+#      OBUF                        : 60
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      105  out of   4656     2%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                169  out of   9312     1%  
+    Number used as logic:               139
+    Number used as RAMs:                 30
+ Number of IOs:                          99
+ Number of bonded IOBs:                  99  out of    232    42%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+IAR_CLK                            | BUFGP                  | 60    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.458ns (Maximum Frequency: 154.847MHz)
+   Minimum input arrival time before clock: 4.975ns
+   Maximum output required time after clock: 9.842ns
+   Maximum combinational path delay: 8.609ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IAR_CLK'
+  Clock period: 6.458ns (frequency: 154.847MHz)
+  Total number of paths / destination ports: 555 / 60
+-------------------------------------------------------------------------
+Delay:               6.458ns (Levels of Logic = 32)
+  Source:            Instruktionsadresse_3 (FF)
+  Destination:       Instruktionsadresse_31 (FF)
+  Source Clock:      IAR_CLK rising
+  Destination Clock: IAR_CLK rising
+
+  Data Path: Instruktionsadresse_3 to Instruktionsadresse_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  Instruktionsadresse_3 (Instruktionsadresse_3)
+     LUT1:I0->O            1   0.704   0.000  Madd_Instruktionsadresse_plus_one_cy<1>_rt (Madd_Instruktionsadresse_plus_one_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_Instruktionsadresse_plus_one_cy<1> (Madd_Instruktionsadresse_plus_one_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<2> (Madd_Instruktionsadresse_plus_one_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<3> (Madd_Instruktionsadresse_plus_one_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<4> (Madd_Instruktionsadresse_plus_one_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<5> (Madd_Instruktionsadresse_plus_one_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<6> (Madd_Instruktionsadresse_plus_one_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<7> (Madd_Instruktionsadresse_plus_one_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<8> (Madd_Instruktionsadresse_plus_one_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<9> (Madd_Instruktionsadresse_plus_one_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<10> (Madd_Instruktionsadresse_plus_one_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<11> (Madd_Instruktionsadresse_plus_one_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<12> (Madd_Instruktionsadresse_plus_one_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<13> (Madd_Instruktionsadresse_plus_one_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<14> (Madd_Instruktionsadresse_plus_one_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<15> (Madd_Instruktionsadresse_plus_one_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<16> (Madd_Instruktionsadresse_plus_one_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<17> (Madd_Instruktionsadresse_plus_one_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<18> (Madd_Instruktionsadresse_plus_one_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<19> (Madd_Instruktionsadresse_plus_one_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<20> (Madd_Instruktionsadresse_plus_one_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<21> (Madd_Instruktionsadresse_plus_one_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<22> (Madd_Instruktionsadresse_plus_one_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<23> (Madd_Instruktionsadresse_plus_one_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<24> (Madd_Instruktionsadresse_plus_one_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<25> (Madd_Instruktionsadresse_plus_one_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<26> (Madd_Instruktionsadresse_plus_one_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<27> (Madd_Instruktionsadresse_plus_one_cy<27>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<28> (Madd_Instruktionsadresse_plus_one_cy<28>)
+     XORCY:CI->O           2   0.804   0.482  Madd_Instruktionsadresse_plus_one_xor<29> (Instruktionsadresse_plus_one<31>)
+     begin scope: 'IAR_LOAD_MUX'
+     LUT3:I2->O            1   0.704   0.000  y<29> (y<29>)
+     end scope: 'IAR_LOAD_MUX'
+     FDR:D                     0.308          Instruktionsadresse_31
+    ----------------------------------------
+    Total                      6.458ns (5.168ns logic, 1.290ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'IAR_CLK'
+  Total number of paths / destination ports: 330 / 180
+-------------------------------------------------------------------------
+Offset:              4.975ns (Levels of Logic = 4)
+  Source:            IAR_LOAD (PAD)
+  Destination:       Instruktionsadresse_13 (FF)
+  Destination Clock: IAR_CLK rising
+
+  Data Path: IAR_LOAD to Instruktionsadresse_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            60   1.218   1.446  IAR_LOAD_IBUF (IAR_LOAD_IBUF)
+     begin scope: 'IAR_LOAD_MUX'
+     LUT4:I0->O            1   0.704   0.595  y<11>_SW1 (N36)
+     LUT3:I0->O            1   0.704   0.000  y<11> (y<11>)
+     end scope: 'IAR_LOAD_MUX'
+     FDR:D                     0.308          Instruktionsadresse_13
+    ----------------------------------------
+    Total                      4.975ns (2.934ns logic, 2.041ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IAR_CLK'
+  Total number of paths / destination ports: 525 / 60
+-------------------------------------------------------------------------
+Offset:              9.842ns (Levels of Logic = 33)
+  Source:            Instruktionsadresse_3 (FF)
+  Destination:       IAR_NEXT_ADDR_OUT<31> (PAD)
+  Source Clock:      IAR_CLK rising
+
+  Data Path: Instruktionsadresse_3 to IAR_NEXT_ADDR_OUT<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  Instruktionsadresse_3 (Instruktionsadresse_3)
+     LUT1:I0->O            1   0.704   0.000  Madd_Instruktionsadresse_plus_one_cy<1>_rt (Madd_Instruktionsadresse_plus_one_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_Instruktionsadresse_plus_one_cy<1> (Madd_Instruktionsadresse_plus_one_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<2> (Madd_Instruktionsadresse_plus_one_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<3> (Madd_Instruktionsadresse_plus_one_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<4> (Madd_Instruktionsadresse_plus_one_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<5> (Madd_Instruktionsadresse_plus_one_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<6> (Madd_Instruktionsadresse_plus_one_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<7> (Madd_Instruktionsadresse_plus_one_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<8> (Madd_Instruktionsadresse_plus_one_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<9> (Madd_Instruktionsadresse_plus_one_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<10> (Madd_Instruktionsadresse_plus_one_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<11> (Madd_Instruktionsadresse_plus_one_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<12> (Madd_Instruktionsadresse_plus_one_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<13> (Madd_Instruktionsadresse_plus_one_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<14> (Madd_Instruktionsadresse_plus_one_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<15> (Madd_Instruktionsadresse_plus_one_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<16> (Madd_Instruktionsadresse_plus_one_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<17> (Madd_Instruktionsadresse_plus_one_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<18> (Madd_Instruktionsadresse_plus_one_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<19> (Madd_Instruktionsadresse_plus_one_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<20> (Madd_Instruktionsadresse_plus_one_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<21> (Madd_Instruktionsadresse_plus_one_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<22> (Madd_Instruktionsadresse_plus_one_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<23> (Madd_Instruktionsadresse_plus_one_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<24> (Madd_Instruktionsadresse_plus_one_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<25> (Madd_Instruktionsadresse_plus_one_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<26> (Madd_Instruktionsadresse_plus_one_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<27> (Madd_Instruktionsadresse_plus_one_cy<27>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_Instruktionsadresse_plus_one_cy<28> (Madd_Instruktionsadresse_plus_one_cy<28>)
+     XORCY:CI->O           2   0.804   0.482  Madd_Instruktionsadresse_plus_one_xor<29> (Instruktionsadresse_plus_one<31>)
+     begin scope: 'IAR_REVOKE_MUX'
+     LUT3:I2->O            1   0.704   0.420  y<29>1 (y<29>)
+     end scope: 'IAR_REVOKE_MUX'
+     OBUF:I->O                 3.272          IAR_NEXT_ADDR_OUT_31_OBUF (IAR_NEXT_ADDR_OUT<31>)
+    ----------------------------------------
+    Total                      9.842ns (8.132ns logic, 1.710ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 120 / 30
+-------------------------------------------------------------------------
+Delay:               8.609ns (Levels of Logic = 6)
+  Source:            IAR_HISTORY_ID<0> (PAD)
+  Destination:       IAR_NEXT_ADDR_OUT<31> (PAD)
+
+  Data Path: IAR_HISTORY_ID<0> to IAR_NEXT_ADDR_OUT<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            60   1.218   1.271  IAR_HISTORY_ID_0_IBUF (IAR_HISTORY_ID_0_IBUF)
+     begin scope: 'IAR_HISTORY_BUFFER'
+     RAM16X1S:A0->O        1   1.225   0.499  Mram_ARB_RAM1 (ARB_DATA_OUT<0>)
+     end scope: 'IAR_HISTORY_BUFFER'
+     begin scope: 'IAR_REVOKE_MUX'
+     LUT3:I1->O            1   0.704   0.420  y<0>1 (y<0>)
+     end scope: 'IAR_REVOKE_MUX'
+     OBUF:I->O                 3.272          IAR_NEXT_ADDR_OUT_2_OBUF (IAR_NEXT_ADDR_OUT<2>)
+    ----------------------------------------
+    Total                      8.609ns (6.419ns logic, 2.190ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.05 secs
+ 
+--> 
+
+Total memory usage is 273616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,298 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.53 secs
+ 
+--> Reading design: ArmRAMB_4kx8.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ArmRAMB_4kx8.prj"
+
+---- Target Parameters
+Target Device                      : xc3s500efg320-4
+Output File Name                   : "ArmRAMB_4kx8.ngc"
+
+---- Source Options
+Top Module Name                    : ArmRAMB_4kx8
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/HardwareLab/Blatt2/PlanAhead_Blatt2/PlanAhead_Blatt2.srcs/sources_1/imports/Blatt2/ArmRAMB_4kx8.vhd" in Library work.
+Entity <ArmRAMB_4kx8> compiled.
+Entity <ArmRAMB_4kx8> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ArmRAMB_4kx8> in library <work> (architecture <behavioral>) with generics.
+	SIZE = 4096
+	WIDTH = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ArmRAMB_4kx8> in library <work> (Architecture <behavioral>).
+	SIZE = 4096
+	WIDTH = 8
+Entity <ArmRAMB_4kx8> analyzed. Unit <ArmRAMB_4kx8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ArmRAMB_4kx8>.
+    Related source file is "C:/HardwareLab/Blatt2/PlanAhead_Blatt2/PlanAhead_Blatt2.srcs/sources_1/imports/Blatt2/ArmRAMB_4kx8.vhd".
+    Found 4096x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <DOA>.
+    Found 8-bit register for signal <DOB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ArmRAMB_4kx8> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x8-bit dual-port RAM                              : 1
+# Registers                                            : 2
+ 8-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ArmRAMB_4kx8>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <DOB> <DOA>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | no-change                           |          |
+    |     clkA           | connected to signal <RAM_CLK>       | rise     |
+    |     enA            | connected to signal <ENB>           | high     |
+    |     weA            | connected to signal <WEB>           | high     |
+    |     addrA          | connected to signal <ADDRB>         |          |
+    |     diA            | connected to signal <DIB>           |          |
+    |     doA            | connected to signal <DOB>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <RAM_CLK>       | rise     |
+    |     enB            | connected to signal <ENA>           | high     |
+    |     addrB          | connected to signal <ADDRA>         |          |
+    |     doB            | connected to signal <DOA>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ArmRAMB_4kx8> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4096x8-bit dual-port block RAM                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ArmRAMB_4kx8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ArmRAMB_4kx8.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 52
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# RAMS                             : 2
+#      RAMB16_S4_S4                : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 51
+#      IBUF                        : 35
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        0  out of   4656     0%  
+ Number of IOs:                          52
+ Number of bonded IOBs:                  52  out of    232    22%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+RAM_CLK                            | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.918ns
+   Maximum output required time after clock: 6.492ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RAM_CLK'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              2.918ns (Levels of Logic = 1)
+  Source:            WEB (PAD)
+  Destination:       Mram_ram1 (RAM)
+  Destination Clock: RAM_CLK rising
+
+  Data Path: WEB to Mram_ram1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  WEB_IBUF (WEB_IBUF)
+     RAMB16_S4_S4:WEA          1.253          Mram_ram1
+    ----------------------------------------
+    Total                      2.918ns (2.471ns logic, 0.447ns route)
+                                       (84.7% logic, 15.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RAM_CLK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              6.492ns (Levels of Logic = 1)
+  Source:            Mram_ram2 (RAM)
+  Destination:       DOA<7> (PAD)
+  Source Clock:      RAM_CLK rising
+
+  Data Path: Mram_ram2 to DOA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S4_S4:CLKB->DOB3    1   2.800   0.420  Mram_ram2 (DOA_7_OBUF)
+     OBUF:I->O                 3.272          DOA_7_OBUF (DOA<7>)
+    ----------------------------------------
+    Total                      6.492ns (6.072ns logic, 0.420ns route)
+                                       (93.5% logic, 6.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.31 secs
+ 
+--> 
+
+Total memory usage is 269840 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

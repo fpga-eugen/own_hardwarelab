@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/HardwareLab/Blatt5/unisim
+Pvcomponents
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+32
+!s110 1480882899
+!i10b 1
+w1480882285
+R0
+8C:/HardwareLab/Blatt5/unisim/unisim_VCOMP.vhd
+FC:/HardwareLab/Blatt5/unisim/unisim_VCOMP.vhd
+l0
+L13
+VI0_]fI3U_6;]YR9Il?_9k2
+!s100 TW9jz>kFS0K]zFFdfhLUU0
+OP;C;10.4a;61
+!s108 1480882899.000000
+!s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt5/unisim/unisim_VCOMP.vhd|
+!s107 C:/HardwareLab/Blatt5/unisim/unisim_VCOMP.vhd|
+!i113 1
+o-work work -O0
+tExplicit 1

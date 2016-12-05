@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn ArmInstructionAddressRegister.prj
+-top ArmInstructionAddressRegister
+-p xc3s500efg320-4
+-ofn ArmInstructionAddressRegister.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

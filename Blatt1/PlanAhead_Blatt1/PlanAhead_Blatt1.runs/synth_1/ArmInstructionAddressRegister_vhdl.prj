@@ -1,0 +1,4 @@
+vhdl work "C:\HardwareLab\Blatt1\PlanAhead_Blatt1\PlanAhead_Blatt1.srcs\sources_1\imports\Blatt1\mux2.vhd"
+vhdl work "C:\HardwareLab\Blatt1\PlanAhead_Blatt1\PlanAhead_Blatt1.srcs\sources_1\imports\Blatt1\ArmTypes.vhd"
+vhdl work "C:\HardwareLab\Blatt1\PlanAhead_Blatt1\PlanAhead_Blatt1.srcs\sources_1\imports\Blatt1\ArmRamBuffer.vhd"
+vhdl work "C:\HardwareLab\Blatt1\PlanAhead_Blatt1\PlanAhead_Blatt1.srcs\sources_1\imports\Blatt1\ArmInstructionAddressRegister.vhd"

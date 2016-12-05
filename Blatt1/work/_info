@@ -1,0 +1,425 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/HardwareLab/Blatt1
+Parmconfiguration
+Z1 DPx4 work 8 armtypes 0 22 mOb^elP0dMYK]@MO>fkNf2
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 w1389010937
+R0
+8C:/HardwareLab/Blatt1/ArmConfiguration.vhd
+FC:/HardwareLab/Blatt1/ArmConfiguration.vhd
+l0
+L20
+V9okEdaVbzhDIQmO<YQPCT0
+!s100 3UGQ?G[J?R>NnJdS6zWJ`2
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1479581784
+!i10b 1
+Z8 !s108 1479581784.000000
+!s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt1/ArmConfiguration.vhd|
+!s107 C:/HardwareLab/Blatt1/ArmConfiguration.vhd|
+!i113 1
+Z9 o-work work -O0
+Z10 tExplicit 1
+Earmdatareplication
+R5
+R1
+R3
+R4
+R0
+Z11 8C:/HardwareLab/Blatt1/ArmDataReplication.vhd
+Z12 FC:/HardwareLab/Blatt1/ArmDataReplication.vhd
+l0
+L21
+VS5Q^@NEG[ZeWSkj9M]7XQ0
+!s100 o@NYMQ@XH`:8`AHFLI2ID1
+R6
+32
+R7
+!i10b 1
+R8
+Z13 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmDataReplication.vhd|
+Z14 !s107 C:/HardwareLab/Blatt1/ArmDataReplication.vhd|
+!i113 1
+R9
+R10
+Abehave
+R1
+R3
+R4
+DEx4 work 18 armdatareplication 0 22 S5Q^@NEG[ZeWSkj9M]7XQ0
+l29
+L28
+V8E5CS6]CQYXDRG<<T=R[i0
+!s100 3ikMBh?RDoQJaR14L1c;<1
+R6
+32
+R7
+!i10b 1
+R8
+R13
+R14
+!i113 1
+R9
+R10
+Earmdatareplication_tb
+R5
+R1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+R3
+R0
+Z18 8C:/HardwareLab/Blatt1/ArmDataReplication_tb.vhd
+Z19 FC:/HardwareLab/Blatt1/ArmDataReplication_tb.vhd
+l0
+L10
+Vb?EC:Ya>6XgAP;DnKcYck3
+!s100 Ukg;B9IX9]`AHG@FbJH8H3
+R6
+32
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmDataReplication_tb.vhd|
+Z21 !s107 C:/HardwareLab/Blatt1/ArmDataReplication_tb.vhd|
+!i113 1
+R9
+R10
+Atestbench_arch
+R1
+R15
+R16
+R17
+R4
+R3
+DEx4 work 21 armdatareplication_tb 0 22 b?EC:Ya>6XgAP;DnKcYck3
+l32
+L13
+VN]5z;aZbhHD`d=0AAS<hl1
+!s100 fnocdK227[JR9Fn6QoiX_1
+R6
+32
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R9
+R10
+Parmfilepaths
+R5
+R0
+Z22 8C:/HardwareLab/Blatt1/ArmFilePaths.vhd
+Z23 FC:/HardwareLab/Blatt1/ArmFilePaths.vhd
+l0
+L1
+V0:a>9Xh5II<d6T3A?83B61
+!s100 hlI;_IVAOo54oo@<c6l;S3
+R6
+32
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmFilePaths.vhd|
+Z25 !s107 C:/HardwareLab/Blatt1/ArmFilePaths.vhd|
+!i113 1
+R9
+R10
+Bbody
+Z26 DPx4 work 12 armfilepaths 0 22 0:a>9Xh5II<d6T3A?83B61
+l0
+L8
+VdFh=jz6a`ilgX3]jR9b6>1
+!s100 2ClNODMdPd4ZdDBBoXYb^0
+R6
+32
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R9
+R10
+Z27 nbody
+Earminstructionaddressregister
+Z28 w1479581771
+R1
+R2
+R3
+R4
+R0
+Z29 8C:/HardwareLab/Blatt1/ArmInstructionAddressRegister.vhd
+Z30 FC:/HardwareLab/Blatt1/ArmInstructionAddressRegister.vhd
+l0
+L17
+VC@<H?MVazW[9WIN1U:0mj3
+!s100 TFh>SQ@ZWXBU>Z;0B?OzR0
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmInstructionAddressRegister.vhd|
+Z32 !s107 C:/HardwareLab/Blatt1/ArmInstructionAddressRegister.vhd|
+!i113 1
+R9
+R10
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 29 arminstructionaddressregister 0 22 C@<H?MVazW[9WIN1U:0mj3
+l69
+L39
+VgN<1II5>HZll0U`fV1W>U2
+!s100 J7?zLgEV^2G`FW24eSc?R1
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R9
+R10
+Earminstructionaddressregister_tb
+R5
+Z33 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+R26
+R17
+Z34 DPx4 work 8 tb_tools 0 22 [7b^Hh=CE:nNI0TgF2JHA0
+Z35 DPx4 work 16 armconfiguration 0 22 9okEdaVbzhDIQmO<YQPCT0
+R1
+R2
+R3
+R4
+R0
+Z36 8C:/HardwareLab/Blatt1/ArmInstructionAddressRegister_tb.vhd
+Z37 FC:/HardwareLab/Blatt1/ArmInstructionAddressRegister_tb.vhd
+l0
+L21
+V61WN79d2jR<H>::nnTVCP0
+!s100 X?[<_ZN<UBLH2LQ^S]_Fa3
+R6
+32
+R7
+!i10b 1
+R8
+Z38 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmInstructionAddressRegister_tb.vhd|
+Z39 !s107 C:/HardwareLab/Blatt1/ArmInstructionAddressRegister_tb.vhd|
+!i113 1
+R9
+R10
+Abehavior
+R33
+R26
+R17
+R34
+R35
+R1
+R2
+R3
+R4
+DEx4 work 32 arminstructionaddressregister_tb 0 22 61WN79d2jR<H>::nnTVCP0
+l66
+L24
+V6cd4YMaUMHFni1@?z8DXg3
+!s100 ;3MAGQ8L68OJg;50C8Wi=1
+R6
+32
+R7
+!i10b 1
+R8
+R38
+R39
+!i113 1
+R9
+R10
+Earmrambuffer
+R5
+R2
+R3
+R4
+R0
+Z40 8C:/HardwareLab/Blatt1/ArmRamBuffer.vhd
+Z41 FC:/HardwareLab/Blatt1/ArmRamBuffer.vhd
+l0
+L13
+V?^TVYE@Ve2K3ZiekTT1^Q2
+!s100 PE><GHkQd:FHSHFg4C>WN1
+R6
+32
+Z42 !s110 1479581785
+!i10b 1
+R8
+Z43 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmRamBuffer.vhd|
+Z44 !s107 C:/HardwareLab/Blatt1/ArmRamBuffer.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 armrambuffer 0 22 ?^TVYE@Ve2K3ZiekTT1^Q2
+l30
+L27
+V_Y>bGH7m`Z<DRE:DkIK1C3
+!s100 3@^_H8J?3hU7K;<a:RJI^3
+R6
+32
+R42
+!i10b 1
+R8
+R43
+R44
+!i113 1
+R9
+R10
+Parmtypes
+R3
+R4
+R5
+R0
+Z45 8C:/HardwareLab/Blatt1/ArmTypes.vhd
+Z46 FC:/HardwareLab/Blatt1/ArmTypes.vhd
+l0
+L11
+VmOb^elP0dMYK]@MO>fkNf2
+!s100 lGi@m`CVn[M6Z7o6ko7iK2
+R6
+32
+b1
+R42
+!i10b 1
+Z47 !s108 1479581785.000000
+Z48 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/ArmTypes.vhd|
+Z49 !s107 C:/HardwareLab/Blatt1/ArmTypes.vhd|
+!i113 1
+R9
+R10
+Bbody
+R1
+R3
+R4
+l0
+L413
+V==ef>FWZDCG[7A6Tz7kRD1
+!s100 @aob?;3;DW`_I]=?@=3ZU2
+R6
+32
+R42
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R9
+R10
+R27
+Emux2
+Z50 w1478979274
+R3
+R4
+R0
+Z51 8C:/HardwareLab/Blatt1/mux2.vhd
+Z52 FC:/HardwareLab/Blatt1/mux2.vhd
+l0
+L4
+VDzbB@]k4Z3OecNn>OYRI<1
+!s100 1`3MIo:QAVjYNG?j>@<el2
+R6
+32
+R42
+!i10b 1
+R47
+Z53 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/mux2.vhd|
+Z54 !s107 C:/HardwareLab/Blatt1/mux2.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+R3
+R4
+DEx4 work 4 mux2 0 22 DzbB@]k4Z3OecNn>OYRI<1
+l12
+L11
+Va[1flZ=NH[eghihMeL:eG3
+!s100 _eIn9idP^D<X1eF^m782[1
+R6
+32
+R42
+!i10b 1
+R47
+R53
+R54
+!i113 1
+R9
+R10
+Ptb_tools
+R26
+R35
+R1
+R17
+R2
+R4
+R3
+R5
+R0
+Z55 8C:/HardwareLab/Blatt1/TB_Tools.vhd
+Z56 FC:/HardwareLab/Blatt1/TB_Tools.vhd
+l0
+L34
+V[7b^Hh=CE:nNI0TgF2JHA0
+!s100 =SBjF3[ZYzGiJ:PDb5V>g2
+R6
+32
+b1
+R42
+!i10b 1
+R47
+Z57 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt1/TB_Tools.vhd|
+Z58 !s107 C:/HardwareLab/Blatt1/TB_Tools.vhd|
+!i113 1
+R9
+R10
+Bbody
+R34
+R26
+R35
+R1
+R17
+R2
+R4
+R3
+l0
+L162
+Z59 V24PoAL@K2dA<aN6JfhBak0
+Z60 !s100 l<_bzm7B1U7n6Go>oIei:3
+R6
+32
+R42
+!i10b 1
+R47
+R57
+R58
+!i113 1
+R9
+R10
+R27

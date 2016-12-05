@@ -1,0 +1,746 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/HardwareLab/Blatt5
+Earmchipselectgenerator
+Z1 w1480879595
+Z2 DPx4 work 8 armtypes 0 22 mOb^elP0dMYK]@MO>fkNf2
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx4 work 16 armconfiguration 0 22 7ml>5OoH=UJ^G>ld<Q>c42
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z9 8C:/HardwareLab/Blatt5/ArmChipSelectGenerator.vhd
+Z10 FC:/HardwareLab/Blatt5/ArmChipSelectGenerator.vhd
+l0
+L30
+VSQjM]1KKLg_:9QJPW_VhM3
+!s100 OkOZXnj]MWPDeCBJ@n<:20
+Z11 OP;C;10.4a;61
+32
+Z12 !s110 1480883716
+!i10b 1
+Z13 !s108 1480883716.000000
+Z14 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmChipSelectGenerator.vhd|
+Z15 !s107 C:/HardwareLab/Blatt5/ArmChipSelectGenerator.vhd|
+!i113 1
+Z16 o-work work -O0
+Z17 tExplicit 1
+Abehave
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 22 armchipselectgenerator 0 22 SQjM]1KKLg_:9QJPW_VhM3
+l70
+L46
+V]W61IEzXe<bcMI?>mEP4J3
+!s100 ja]iEMhbBzmPM<GjOlNMf0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Earmclkgen
+Z18 w1480880624
+Z19 DPx6 unisim 11 vcomponents 0 22 I0_]fI3U_6;]YR9Il?_9k2
+R3
+R7
+R8
+R0
+Z20 8C:/HardwareLab/Blatt5/ArmClkGen.vhd
+Z21 FC:/HardwareLab/Blatt5/ArmClkGen.vhd
+l0
+L30
+V9i^nX3OZ>JoBnIj48VWMB3
+!s100 ?ZeRKS[oYcje^^OPj0IBf1
+R11
+32
+R12
+!i10b 1
+R13
+Z22 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmClkGen.vhd|
+Z23 !s107 C:/HardwareLab/Blatt5/ArmClkGen.vhd|
+!i113 1
+R16
+R17
+Abehavioral
+R19
+R3
+R7
+R8
+DEx4 work 9 armclkgen 0 22 9i^nX3OZ>JoBnIj48VWMB3
+l44
+L39
+VZ`EY8K[9j2dB?[MAlgLhW1
+!s100 WZkY]O7W9iR0jmSf?SiO03
+R11
+32
+R12
+!i10b 1
+R13
+R22
+R23
+!i113 1
+R16
+R17
+Parmconfiguration
+R2
+R3
+R7
+R8
+w1480883647
+R0
+8C:/HardwareLab/Blatt5/ArmConfiguration.vhd
+FC:/HardwareLab/Blatt5/ArmConfiguration.vhd
+l0
+L20
+V7ml>5OoH=UJ^G>ld<Q>c42
+!s100 Y^5@SK9C;^Zg;a5o78]gH3
+R11
+32
+R12
+!i10b 1
+R13
+!s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmConfiguration.vhd|
+!s107 C:/HardwareLab/Blatt5/ArmConfiguration.vhd|
+!i113 1
+R16
+R17
+Parmfilepaths
+Z24 w1389010937
+R0
+Z25 8C:/HardwareLab/Blatt5/ArmFilePaths.vhd
+Z26 FC:/HardwareLab/Blatt5/ArmFilePaths.vhd
+l0
+L1
+V0:a>9Xh5II<d6T3A?83B61
+!s100 hlI;_IVAOo54oo@<c6l;S3
+R11
+32
+R12
+!i10b 1
+R13
+Z27 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmFilePaths.vhd|
+Z28 !s107 C:/HardwareLab/Blatt5/ArmFilePaths.vhd|
+!i113 1
+R16
+R17
+Bbody
+Z29 DPx4 work 12 armfilepaths 0 22 0:a>9Xh5II<d6T3A?83B61
+l0
+L8
+VdFh=jz6a`ilgX3]jR9b6>1
+!s100 2ClNODMdPd4ZdDBBoXYb^0
+R11
+32
+R12
+!i10b 1
+R13
+R27
+R28
+!i113 1
+R16
+R17
+Z30 nbody
+Parmglobalprobes
+R2
+R7
+R8
+Z31 w1389014536
+R0
+Z32 8C:/HardwareLab/Blatt5/ArmGlobalProbes.vhd
+Z33 FC:/HardwareLab/Blatt5/ArmGlobalProbes.vhd
+l0
+L13
+VBMh6j727i7R?<G6`I>dHh0
+!s100 ok[BDO@ccXToM?XZIW:Qi0
+R11
+32
+b1
+R12
+!i10b 1
+R13
+Z34 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmGlobalProbes.vhd|
+Z35 !s107 C:/HardwareLab/Blatt5/ArmGlobalProbes.vhd|
+!i113 1
+R16
+R17
+Bbody
+Z36 DPx4 work 15 armglobalprobes 0 22 BMh6j727i7R?<G6`I>dHh0
+R2
+R7
+R8
+l0
+L159
+Vogoe9hU^66Xkca]igUlGC1
+!s100 OczFC9b=Lhh_ZzE2>kR4H3
+R11
+32
+R12
+!i10b 1
+R13
+R34
+R35
+!i113 1
+R16
+R17
+R30
+Earmmeminterface
+Z37 w1480704220
+R2
+R4
+R3
+R7
+R8
+R0
+Z38 8C:/HardwareLab/Blatt5/ArmMemInterface.vhd
+Z39 FC:/HardwareLab/Blatt5/ArmMemInterface.vhd
+l0
+L15
+VL1i;51K0U9O;C5L:3O3aL0
+!s100 =4g^]W6XBoSXW;HQ3bR`90
+R11
+32
+Z40 !s110 1480883717
+!i10b 1
+Z41 !s108 1480883717.000000
+Z42 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmMemInterface.vhd|
+Z43 !s107 C:/HardwareLab/Blatt5/ArmMemInterface.vhd|
+!i113 1
+R16
+R17
+Abehave
+R2
+R4
+R3
+R7
+R8
+DEx4 work 15 armmeminterface 0 22 L1i;51K0U9O;C5L:3O3aL0
+l60
+L39
+V4i1Xk9Z:b[z64eEAiNLSc2
+!s100 6^^_0CWVaL8?kLb?`4^[X1
+R11
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R16
+R17
+Earmramb_4kx32
+Z44 w1480626852
+R3
+Z45 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R7
+R8
+R0
+Z46 8C:/HardwareLab/Blatt5/ArmRAMB_4kx32.vhd
+Z47 FC:/HardwareLab/Blatt5/ArmRAMB_4kx32.vhd
+l0
+L14
+V@UQU]cXz4SL3Z4h[^Y?`l2
+!s100 CJj0NDh2;_B]n;gCbW^iV0
+R11
+32
+R40
+!i10b 1
+R41
+Z48 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmRAMB_4kx32.vhd|
+Z49 !s107 C:/HardwareLab/Blatt5/ArmRAMB_4kx32.vhd|
+!i113 1
+R16
+R17
+Abehavioral
+R3
+R45
+R7
+R8
+DEx4 work 13 armramb_4kx32 0 22 @UQU]cXz4SL3Z4h[^Y?`l2
+l50
+L34
+V;k<9]c=khCb[X`91OQoDE1
+!s100 Rf@9VbEH=mESK:3<^0Pz=0
+R11
+32
+R40
+!i10b 1
+R41
+R48
+R49
+!i113 1
+R16
+R17
+Earmramb_4kx8
+Z50 w1479755382
+R3
+R45
+R7
+R8
+R0
+Z51 8C:/HardwareLab/Blatt5/ArmRAMB_4kx8.vhd
+Z52 FC:/HardwareLab/Blatt5/ArmRAMB_4kx8.vhd
+l0
+L8
+VhSA6z:YV1mF[XI@1KdgJB1
+!s100 oAdT=]]4Q@a:6BzCYl9;40
+R11
+32
+R40
+!i10b 1
+R41
+Z53 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmRAMB_4kx8.vhd|
+Z54 !s107 C:/HardwareLab/Blatt5/ArmRAMB_4kx8.vhd|
+!i113 1
+R16
+R17
+Abehavioral
+R3
+R45
+R7
+R8
+DEx4 work 12 armramb_4kx8 0 22 hSA6z:YV1mF[XI@1KdgJB1
+l26
+L23
+VUa33ZE_2UGISib1ihc?ei3
+!s100 lcoYd<F2<VEY6QT2bIBE91
+R11
+32
+R40
+!i10b 1
+R41
+R53
+R54
+!i113 1
+R16
+R17
+Earmrambuffer
+R24
+R3
+R7
+R8
+R0
+Z55 8C:/HardwareLab/Blatt5/ArmRamBuffer.vhd
+Z56 FC:/HardwareLab/Blatt5/ArmRamBuffer.vhd
+l0
+L13
+V?^TVYE@Ve2K3ZiekTT1^Q2
+!s100 PE><GHkQd:FHSHFg4C>WN1
+R11
+32
+R40
+!i10b 1
+R41
+Z57 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmRamBuffer.vhd|
+Z58 !s107 C:/HardwareLab/Blatt5/ArmRamBuffer.vhd|
+!i113 1
+R16
+R17
+Abehavioral
+R3
+R7
+R8
+DEx4 work 12 armrambuffer 0 22 ?^TVYE@Ve2K3ZiekTT1^Q2
+l30
+L27
+V_Y>bGH7m`Z<DRE:DkIK1C3
+!s100 3@^_H8J?3hU7K;<a:RJI^3
+R11
+32
+R40
+!i10b 1
+R41
+R57
+R58
+!i113 1
+R16
+R17
+Earmrs232interface
+Z59 w1479745088
+R2
+R4
+R45
+R3
+R7
+R8
+R0
+Z60 8C:/HardwareLab/Blatt5/ArmRS232Interface.vhd
+Z61 FC:/HardwareLab/Blatt5/ArmRS232Interface.vhd
+l0
+L48
+V3zQUa?II:CCAieLVmCRYi0
+!s100 9zK=VQcH1D88H`fgPJ<lO2
+R11
+32
+R40
+!i10b 1
+R41
+Z62 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmRS232Interface.vhd|
+Z63 !s107 C:/HardwareLab/Blatt5/ArmRS232Interface.vhd|
+!i113 1
+R16
+R17
+Abehave
+Z64 DEx4 work 20 armwaitstategenasync 0 22 nSOVz1ak:N4Eb8E<;ggI]0
+R2
+R4
+R45
+R3
+R7
+R8
+DEx4 work 17 armrs232interface 0 22 3zQUa?II:CCAieLVmCRYi0
+l107
+L67
+V_SIT<l9PE_lUZG>3`;o_F2
+!s100 ;Qmf@Xz1Fo`>]mTmfz@Jo1
+R11
+32
+R40
+!i10b 1
+R41
+R62
+R63
+!i113 1
+R16
+R17
+Earmswitchdebounce
+R1
+R2
+R4
+R3
+R7
+R8
+R0
+Z65 8C:/HardwareLab/Blatt5/ArmSwitchDebounce.vhd
+Z66 FC:/HardwareLab/Blatt5/ArmSwitchDebounce.vhd
+l0
+L21
+VgaW;GQIaVPID=?UgJb8TF1
+!s100 Rnffb5?GEVJGGW1MM<6z`0
+R11
+32
+R40
+!i10b 1
+R41
+Z67 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmSwitchDebounce.vhd|
+Z68 !s107 C:/HardwareLab/Blatt5/ArmSwitchDebounce.vhd|
+!i113 1
+R16
+R17
+Abehave
+R64
+R2
+R4
+R3
+R7
+R8
+DEx4 work 17 armswitchdebounce 0 22 gaW;GQIaVPID=?UgJb8TF1
+l37
+L30
+VZMN@98N_1O9iPKfM=DON?3
+!s100 97hd@VfHGfIj[<IEE1jgb2
+R11
+32
+R40
+!i10b 1
+R41
+R67
+R68
+!i113 1
+R16
+R17
+Earmsystemcontroller
+R1
+R19
+R36
+R2
+R3
+R7
+R8
+R4
+R0
+Z69 8C:/HardwareLab/Blatt5/ArmSystemController.vhd
+Z70 FC:/HardwareLab/Blatt5/ArmSystemController.vhd
+l0
+L47
+VDcM<R>U==l1b;NZA4QSTJ0
+!s100 c?V65A3<dMMN]^Aa2KJzg0
+R11
+32
+R40
+!i10b 1
+R41
+Z71 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmSystemController.vhd|
+Z72 !s107 C:/HardwareLab/Blatt5/ArmSystemController.vhd|
+!i113 1
+R16
+R17
+Abehave
+R19
+R36
+R2
+R3
+R7
+R8
+R4
+DEx4 work 19 armsystemcontroller 0 22 DcM<R>U==l1b;NZA4QSTJ0
+l118
+L68
+V8P9c8?j3>^ECf`=a9JDD_2
+!s100 :<h?cl04@9I[ZGV`DZfdn2
+R11
+32
+R40
+!i10b 1
+R41
+R71
+R72
+!i113 1
+R16
+R17
+Parmtypes
+R7
+R8
+R24
+R0
+Z73 8C:/HardwareLab/Blatt5/ArmTypes.vhd
+Z74 FC:/HardwareLab/Blatt5/ArmTypes.vhd
+l0
+L11
+VmOb^elP0dMYK]@MO>fkNf2
+!s100 lGi@m`CVn[M6Z7o6ko7iK2
+R11
+32
+b1
+R40
+!i10b 1
+R41
+Z75 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmTypes.vhd|
+Z76 !s107 C:/HardwareLab/Blatt5/ArmTypes.vhd|
+!i113 1
+R16
+R17
+Bbody
+R2
+R7
+R8
+l0
+L413
+V==ef>FWZDCG[7A6Tz7kRD1
+!s100 @aob?;3;DW`_I]=?@=3ZU2
+R11
+32
+R40
+!i10b 1
+R41
+R75
+R76
+!i113 1
+R16
+R17
+R30
+Earmuncoretop
+Z77 w1480883921
+R19
+R7
+R8
+R2
+R0
+Z78 8C:/HardwareLab/Blatt5/ArmUncoreTop.vhd
+Z79 FC:/HardwareLab/Blatt5/ArmUncoreTop.vhd
+l0
+L28
+VlPURmSP[e68]fDXOfcJ<C3
+!s100 4HLcm8FzE^_>lUHjZVgcU3
+R11
+32
+Z80 !s110 1480883926
+!i10b 1
+Z81 !s108 1480883926.000000
+Z82 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmUncoreTop.vhd|
+Z83 !s107 C:/HardwareLab/Blatt5/ArmUncoreTop.vhd|
+!i113 1
+R16
+R17
+Abehave
+R19
+R7
+R8
+R2
+Z84 DEx4 work 12 armuncoretop 0 22 lPURmSP[e68]fDXOfcJ<C3
+l172
+L40
+Z85 VGh12fW>Ehz9HQ>b8^Llf61
+Z86 !s100 ]A_g^2]]lDUEd880>h3SD3
+R11
+32
+R80
+!i10b 1
+R81
+R82
+R83
+!i113 1
+R16
+R17
+Earmuncoretop_tb
+R1
+R29
+Z87 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z88 DPx4 work 8 tb_tools 0 22 [7b^Hh=CE:nNI0TgF2JHA0
+R2
+R4
+R3
+R7
+R8
+R0
+Z89 8C:/HardwareLab/Blatt5/ArmUncoreTop_tb.vhd
+Z90 FC:/HardwareLab/Blatt5/ArmUncoreTop_tb.vhd
+l0
+L15
+VDE6QK^HDBMOE9L;bZ`On]2
+!s100 <6]jWMVamO20;4^BTK2lO0
+R11
+32
+Z91 !s110 1480883718
+!i10b 1
+Z92 !s108 1480883718.000000
+Z93 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmUncoreTop_tb.vhd|
+Z94 !s107 C:/HardwareLab/Blatt5/ArmUncoreTop_tb.vhd|
+!i113 1
+R16
+R17
+Abehave
+R29
+R87
+R88
+R2
+R4
+R3
+R7
+R8
+DEx4 work 15 armuncoretop_tb 0 22 DE6QK^HDBMOE9L;bZ`On]2
+l60
+L30
+V`V[UR_e2<XLM<E>nIR3DB0
+!s100 C>IPm<[KJA5E^MMR?lD3f3
+R11
+32
+R91
+!i10b 1
+R92
+R93
+R94
+!i113 1
+R16
+R17
+Earmwaitstategenasync
+Z95 w1480787232
+R3
+R7
+R8
+R0
+Z96 8C:/HardwareLab/Blatt5/ArmWaitStateGenAsync.vhd
+Z97 FC:/HardwareLab/Blatt5/ArmWaitStateGenAsync.vhd
+l0
+L13
+VnSOVz1ak:N4Eb8E<;ggI]0
+!s100 YB99am@Ch56YBI72bTfi00
+R11
+32
+R91
+!i10b 1
+R92
+Z98 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/ArmWaitStateGenAsync.vhd|
+Z99 !s107 C:/HardwareLab/Blatt5/ArmWaitStateGenAsync.vhd|
+!i113 1
+R16
+R17
+Abehave
+R3
+R7
+R8
+R64
+l28
+L22
+VJhD:QkO]0?b=G]Oz3ZR?H1
+!s100 O:6=mlNzRBZbBjRUX[z>51
+R11
+32
+R91
+!i10b 1
+R92
+R98
+R99
+!i113 1
+R16
+R17
+Ptb_tools
+R29
+R4
+R2
+R87
+R3
+R8
+R7
+R24
+R0
+Z100 8C:/HardwareLab/Blatt5/TB_Tools.vhd
+Z101 FC:/HardwareLab/Blatt5/TB_Tools.vhd
+l0
+L34
+V[7b^Hh=CE:nNI0TgF2JHA0
+!s100 =SBjF3[ZYzGiJ:PDb5V>g2
+R11
+32
+b1
+R91
+!i10b 1
+R92
+Z102 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt5/TB_Tools.vhd|
+Z103 !s107 C:/HardwareLab/Blatt5/TB_Tools.vhd|
+!i113 1
+R16
+R17
+Bbody
+R88
+R29
+R4
+R2
+R87
+R3
+R8
+R7
+l0
+L162
+V24PoAL@K2dA<aN6JfhBak0
+!s100 l<_bzm7B1U7n6Go>oIei:3
+R11
+32
+R91
+!i10b 1
+R92
+R102
+R103
+!i113 1
+R16
+R17
+R30

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmRAMB_4kx8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRAMB_4kx8.vhd"/>
+        <Attr Name="ImportTime" Val="1480269821"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmTypes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmTypes.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmDataReplication.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmDataReplication.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmRegaddressTranslation.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRegaddressTranslation.vhd"/>
+        <Attr Name="ImportTime" Val="1480268045"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmGlobalProbes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmGlobalProbes.vhd"/>
+        <Attr Name="ImportTime" Val="1389014536"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmConfiguration.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmConfiguration.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmRegfile.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRegfile.vhd"/>
+        <Attr Name="ImportTime" Val="1480268515"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmRamBuffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmRamBuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt2/ArmFilePaths.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmFilePaths.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ArmRAMB_4kx8"/>
+    </Config>
+  </FileSet>
+</DARoots>
