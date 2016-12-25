@@ -7,13 +7,15 @@ entity half_adder is
 		A 	: in  std_logic;
     B 	: in  std_logic;
 		S 	: out  std_logic;
-    C 	: out  std_logic;
+    C 	: out  std_logic
 	);
-end entity ArmRegisterBitAdder;
+end entity half_adder;
 
 architecture structure of half_adder is
 
 begin
+
   S <= A xor B;
   C <= A and B;
+	
 end architecture structure;

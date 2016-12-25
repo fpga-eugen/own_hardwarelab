@@ -8,9 +8,9 @@ entity full_adder is
     B 	: in  std_logic;
     Cin 	: in  std_logic;
 		S 	: out  std_logic;
-    C 	: out  std_logic;
+    C 	: out  std_logic
 	);
-end entity ArmRegisterBitAdder;
+end entity full_adder;
 
 architecture structure of full_adder is
 

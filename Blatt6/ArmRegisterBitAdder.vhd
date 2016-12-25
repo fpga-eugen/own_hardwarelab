@@ -21,4 +21,7 @@ architecture structure of ArmRegisterBitAdder is
 
 begin
 
+
+
+
 end architecture structure;

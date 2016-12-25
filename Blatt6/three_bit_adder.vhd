@@ -2,18 +2,18 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity four_bit_adder is
+entity three_bit_adder is
 	Port (
-		A 	: in  std_logic_vector(3 downto 0);
-    B 	: in  std_logic_vector(3 downto 0);
-		S 	: out  std_logic_vector(3 downto 0);
+		A 	: in  std_logic_vector(2 downto 0);
+    B 	: in  std_logic_vector(2 downto 0);
+		S 	: out  std_logic_vector(2 downto 0);
     C 	: out  std_logic
 	);
-end entity four_bit_adder;
+end entity three_bit_adder;
 
-architecture structure of four_bit_adder is
+architecture structure of three_bit_adder is
 
-signal cout_buffer : std_logic_vector(2 downto 0);
+signal cout_buffer : std_logic_vector(1 downto 0);
 constant signal cin_0 : std_logic := '0';
 
 begin
@@ -42,15 +42,6 @@ begin
   B => B(2),
   Cin => cout_buffer(1),
   S => S(2),
-  C => cout_buffer(2)
-  );
-
-  full_adder_4 : entity work.full_adder
-  port map (
-  A => A(3),
-  B => B(3),
-  Cin => cout_buffer(2),
-  S => S(3),
   C => C
   );
 
