@@ -1,0 +1,6 @@
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\full_adder.vhd"
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\two_bit_adder.vhd"
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\three_bit_adder.vhd"
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\half_adder.vhd"
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\four_bit_adder.vhd"
+vhdl work "C:\HardwareLab\Blatt6\PlanAhead_Blatt5\PlanAhead_Blatt5.srcs\sources_1\imports\Blatt6\ArmRegisterBitAdder.vhd"
