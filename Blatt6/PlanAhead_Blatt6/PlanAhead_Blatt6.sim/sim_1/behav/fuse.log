@@ -1,0 +1,42 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle pa -incremental -L work -o ArmRegisterBitAdder_TB.exe --prj C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.sim/sim_1/behav/ArmRegisterBitAdder_TB.prj -top work.ArmRegisterBitAdder_TB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/full_adder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/two_bit_adder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/three_bit_adder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/half_adder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/four_bit_adder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/ArmRegisterBitAdder.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/ArmTypes.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/ArmConfiguration.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/ArmFilePaths.vhd" into library work
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/TB_Tools.vhd" into library work
+WARNING:HDLCompiler:797 - "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/TB_Tools.vhd" Line 459: Subprogram <init_seed_isim> does not conform with its declaration.
+Parsing VHDL file "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.srcs/sources_1/imports/Blatt6/ArmRegisterBitAdder_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/ieee/numeric_std.vhd" Line 3314: Range is empty (null range)
+WARNING:HDLCompiler:220 - "N:/P.20131013/rtf/vhdl/src/ieee/numeric_std.vhd" Line 3314: Assignment ignored
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package armtypes
+Compiling package armconfiguration
+Compiling package armfilepaths
+Compiling package tb_tools
+Compiling architecture structure of entity half_adder [half_adder_default]
+Compiling architecture structure of entity two_bit_adder [two_bit_adder_default]
+Compiling architecture structure of entity full_adder [full_adder_default]
+Compiling architecture structure of entity three_bit_adder [three_bit_adder_default]
+Compiling architecture structure of entity four_bit_adder [four_bit_adder_default]
+Compiling architecture structure of entity ArmRegisterBitAdder [armregisterbitadder_default]
+Compiling architecture testbench of entity armregisterbitadder_tb
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/ArmRegisterBitAdder_TB.exe.sim/ArmRegisterBitAdder_TB.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Zugriff verweigert: "isim\ArmRegisterBitAdder_TB.exe.sim\ArmRegisterBitAdder_TB.exe"
+ERROR:Simulator:861 - Failed to link the design

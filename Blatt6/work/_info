@@ -68,44 +68,134 @@ R7
 R8
 Z16 nbody
 Earmldmstmnextaddress
-Z17 w1480884713
+Z17 w1482886816
 R3
 R4
 R0
-8C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd
-FC:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd
+Z18 8C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd
+Z19 FC:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd
 l0
 L16
 VlJ4VWO:n^[>4hoZ2c;Z[D3
 !s100 ZY8KDX00=XaoN9]UWNaYU1
 R6
 32
-R11
+Z20 !s110 1482886820
 !i10b 1
-R12
+Z21 !s108 1482886820.000000
+Z22 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd|
+Z23 !s107 C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd|
+!i113 1
+R7
+R8
+Abehave
+Z24 DEx4 work 3 reg 0 22 `3[mDRm=HM;e[ceKLP6K82
+R3
+R4
+Z25 DEx4 work 20 armldmstmnextaddress 0 22 lJ4VWO:n^[>4hoZ2c;Z[D3
+l43
+L28
+VDlNPc2XOh1nSgLLezM;kB3
+!s100 DJmPO8FmM^VPK==YR?=2?0
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R7
+R8
+Astructure
+R24
+R3
+R4
+DEx4 work 20 armldmstmnextaddress 0 22 YzXKA>M415C:jmD2n[5Tm0
+l50
+L35
+VAbl=c;1JQAiUW>2z;TRoo0
+!s100 [d3@na=JW;?2AFVIb90V52
+R6
+32
+!s110 1482867454
+!i10b 1
+!s108 1482867454.000000
 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd|
-!s107 C:/HardwareLab/Blatt6/ArmLdmStmNextAddress.vhd|
+R23
+!i113 1
+R7
+R8
+w1482867388
+Earmldmstmnextaddress_tb
+Z26 w1480884713
+R15
+Z27 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z28 DPx4 work 8 tb_tools 0 22 [7b^Hh=CE:nNI0TgF2JHA0
+R1
+Z29 DPx4 work 16 armconfiguration 0 22 9okEdaVbzhDIQmO<YQPCT0
+R2
+R3
+R4
+R0
+Z30 8C:/HardwareLab/Blatt6/ArmLdmStmNextAddress_tb.vhd
+Z31 FC:/HardwareLab/Blatt6/ArmLdmStmNextAddress_tb.vhd
+l0
+L30
+Vf52O<jak84<Bj_c<:0;Yb1
+!s100 3dazjiNORMlR5TXRkl0Zb1
+R6
+32
+Z32 !s110 1482867456
+!i10b 1
+Z33 !s108 1482867456.000000
+Z34 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmLdmStmNextAddress_tb.vhd|
+Z35 !s107 C:/HardwareLab/Blatt6/ArmLdmStmNextAddress_tb.vhd|
+!i113 1
+R7
+R8
+Atestbench
+R15
+R27
+R28
+R1
+R29
+R2
+R3
+R4
+DEx4 work 23 armldmstmnextaddress_tb 0 22 f52O<jak84<Bj_c<:0;Yb1
+l58
+L33
+V]:Ioi^4oEAYWoPOD>?iZ:1
+!s100 0e8k^LkJn@TLZW`8ISfNz2
+R6
+32
+R32
+!i10b 1
+R33
+R34
+R35
 !i113 1
 R7
 R8
 Earmpriorityvectorfilter
-R17
+Z36 w1482860619
 R3
 R4
 R0
-Z18 8C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd
-Z19 FC:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd
+Z37 8C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd
+Z38 FC:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd
 l0
 L11
 VUC[d^@?7n<5[DFd2Kl^Le0
 !s100 X8B4;m1S^C0Zf5<oS57PB3
 R6
 32
-R11
+Z39 !s110 1482867439
 !i10b 1
-R12
-Z20 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd|
-Z21 !s107 C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd|
+Z40 !s108 1482867439.000000
+Z41 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd|
+Z42 !s107 C:/HardwareLab/Blatt6/ArmPriorityVectorFilter.vhd|
 !i113 1
 R7
 R8
@@ -113,28 +203,28 @@ Astructure
 R3
 R4
 DEx4 work 23 armpriorityvectorfilter 0 22 UC[d^@?7n<5[DFd2Kl^Le0
-l20
+l21
 L18
-VN;VE7M`FgYYMYGUn73k?c0
-!s100 R8=J<E_>;RB9QRCT=W;lD2
+V@_3bVl@TdQJ;6l9I3m2B=0
+!s100 alV21^E8?S_C?Om<]Gcef1
 R6
 32
-R11
+R39
 !i10b 1
-R12
-R20
-R21
+R40
+R41
+R42
 !i113 1
 R7
 R8
 Earmregisterbitadder
-Z22 w1482779911
+Z43 w1482779911
 R2
 R3
 R4
 R0
-Z23 8C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd
-Z24 FC:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd
+Z44 8C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd
+Z45 FC:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd
 l0
 L13
 VamWF8J1G]Z?gF2UgY;P3b0
@@ -144,16 +234,16 @@ R6
 R11
 !i10b 1
 R12
-Z25 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd|
-Z26 !s107 C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd|
+Z46 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd|
+Z47 !s107 C:/HardwareLab/Blatt6/ArmRegisterBitAdder.vhd|
 !i113 1
 R7
 R8
 Astructure
-Z27 DEx4 work 14 four_bit_adder 0 22 l]=m@4ez71]Umb3JzzI9=2
-Z28 DEx4 work 15 three_bit_adder 0 22 Q`Ch5e?XkbQCjnIJ3mW=53
-Z29 DEx4 work 13 two_bit_adder 0 22 a@P:K99@KQSKi2J;aR5Ua2
-Z30 DEx4 work 10 half_adder 0 22 WcnLK@=:GlmERVLaK7_iN2
+Z48 DEx4 work 14 four_bit_adder 0 22 l]=m@4ez71]Umb3JzzI9=2
+Z49 DEx4 work 15 three_bit_adder 0 22 Q`Ch5e?XkbQCjnIJ3mW=53
+Z50 DEx4 work 13 two_bit_adder 0 22 a@P:K99@KQSKi2J;aR5Ua2
+Z51 DEx4 work 10 half_adder 0 22 WcnLK@=:GlmERVLaK7_iN2
 R2
 R3
 R4
@@ -167,44 +257,44 @@ R6
 R11
 !i10b 1
 R12
-R25
-R26
+R46
+R47
 !i113 1
 R7
 R8
 Earmregisterbitadder_tb
-Z31 w1482794468
+Z52 w1482794468
 R15
-Z32 DPx4 work 16 armconfiguration 0 22 9okEdaVbzhDIQmO<YQPCT0
+R29
 R1
-Z33 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-Z34 DPx4 work 8 tb_tools 0 22 [7b^Hh=CE:nNI0TgF2JHA0
+R27
+R28
 R2
 R3
 R4
 R0
-Z35 8C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd
-Z36 FC:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd
+Z53 8C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd
+Z54 FC:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd
 l0
 L20
 V]n;bEng7PARPni]^8NgFB1
 !s100 92B7EC]lQiAeiQH2BB2=Y0
 R6
 32
-Z37 !s110 1482794471
+Z55 !s110 1482794471
 !i10b 1
-Z38 !s108 1482794471.000000
-Z39 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd|
-Z40 !s107 C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd|
+Z56 !s108 1482794471.000000
+Z57 !s90 -reportprogress|300|-work|work|-O0|C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd|
+Z58 !s107 C:/HardwareLab/Blatt6/ArmRegisterBitAdder_tb.vhd|
 !i113 1
 R7
 R8
 Atestbench
 R15
-R32
+R29
 R1
-R33
-R34
+R27
+R28
 R2
 R3
 R4
@@ -215,11 +305,11 @@ VlEW1T;;ckbPefK0o0==AB0
 !s100 IISAko05EkRPhU=A90gQ50
 R6
 32
-R37
+R55
 !i10b 1
-R38
-R39
-R40
+R56
+R57
+R58
 !i113 1
 R7
 R8
@@ -228,8 +318,8 @@ R3
 R4
 R5
 R0
-Z41 8C:/HardwareLab/Blatt6/ArmTypes.vhd
-Z42 FC:/HardwareLab/Blatt6/ArmTypes.vhd
+Z59 8C:/HardwareLab/Blatt6/ArmTypes.vhd
+Z60 FC:/HardwareLab/Blatt6/ArmTypes.vhd
 l0
 L11
 VmOb^elP0dMYK]@MO>fkNf2
@@ -237,11 +327,11 @@ VmOb^elP0dMYK]@MO>fkNf2
 R6
 32
 b1
-Z43 !s110 1482794167
+Z61 !s110 1482794167
 !i10b 1
-Z44 !s108 1482794167.000000
-Z45 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmTypes.vhd|
-Z46 !s107 C:/HardwareLab/Blatt6/ArmTypes.vhd|
+Z62 !s108 1482794167.000000
+Z63 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/ArmTypes.vhd|
+Z64 !s107 C:/HardwareLab/Blatt6/ArmTypes.vhd|
 !i113 1
 R7
 R8
@@ -255,76 +345,76 @@ V==ef>FWZDCG[7A6Tz7kRD1
 !s100 @aob?;3;DW`_I]=?@=3ZU2
 R6
 32
-R43
+R61
 !i10b 1
-R44
-R45
-R46
+R62
+R63
+R64
 !i113 1
 R7
 R8
 R16
 Efour_bit_adder
-Z47 w1482778087
+Z65 w1482778087
 R2
 R3
 R4
 R0
-Z48 8C:/HardwareLab/Blatt6/four_bit_adder.vhd
-Z49 FC:/HardwareLab/Blatt6/four_bit_adder.vhd
+Z66 8C:/HardwareLab/Blatt6/four_bit_adder.vhd
+Z67 FC:/HardwareLab/Blatt6/four_bit_adder.vhd
 l0
 L5
 Vl]=m@4ez71]Umb3JzzI9=2
 !s100 enZn=SHNoGih@DhSNFRI@3
 R6
 32
-R43
+R61
 !i10b 1
-R44
-Z50 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/four_bit_adder.vhd|
-Z51 !s107 C:/HardwareLab/Blatt6/four_bit_adder.vhd|
+R62
+Z68 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/four_bit_adder.vhd|
+Z69 !s107 C:/HardwareLab/Blatt6/four_bit_adder.vhd|
 !i113 1
 R7
 R8
 Astructure
-Z52 DEx4 work 10 full_adder 0 22 3EKZkg?lCg;9QQfG<aEiW1
+Z70 DEx4 work 10 full_adder 0 22 3EKZkg?lCg;9QQfG<aEiW1
 R2
 R3
 R4
-R27
+R48
 l19
 L14
 Vne73BJNG8G@a@XVHhX^zL3
 !s100 d;E>7N[Pzo3^oLIM`:l001
 R6
 32
-R43
+R61
 !i10b 1
-R44
-R50
-R51
+R62
+R68
+R69
 !i113 1
 R7
 R8
 Efull_adder
-Z53 w1482259275
+Z71 w1482259275
 R2
 R3
 R4
 R0
-Z54 8C:/HardwareLab/Blatt6/full_adder.vhd
-Z55 FC:/HardwareLab/Blatt6/full_adder.vhd
+Z72 8C:/HardwareLab/Blatt6/full_adder.vhd
+Z73 FC:/HardwareLab/Blatt6/full_adder.vhd
 l0
 L5
 V3EKZkg?lCg;9QQfG<aEiW1
 !s100 [n:l5VHP0m>_k3g_E6U2H0
 R6
 32
-R43
+R61
 !i10b 1
-R44
-Z56 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/full_adder.vhd|
-Z57 !s107 C:/HardwareLab/Blatt6/full_adder.vhd|
+R62
+Z74 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/full_adder.vhd|
+Z75 !s107 C:/HardwareLab/Blatt6/full_adder.vhd|
 !i113 1
 R7
 R8
@@ -332,40 +422,40 @@ Astructure
 R2
 R3
 R4
-R52
+R70
 l17
 L15
 V[9^m=dXgYnjR34_Kl9oDD1
 !s100 7dXXahV>8Bm`b:1Hz`ziT2
 R6
 32
-R43
+R61
 !i10b 1
-R44
-R56
-R57
+R62
+R74
+R75
 !i113 1
 R7
 R8
 Ehalf_adder
-Z58 w1482259441
+Z76 w1482259441
 R2
 R3
 R4
 R0
-Z59 8C:/HardwareLab/Blatt6/half_adder.vhd
-Z60 FC:/HardwareLab/Blatt6/half_adder.vhd
+Z77 8C:/HardwareLab/Blatt6/half_adder.vhd
+Z78 FC:/HardwareLab/Blatt6/half_adder.vhd
 l0
 L5
 VWcnLK@=:GlmERVLaK7_iN2
 !s100 1Ch[`k21>KFO<EQIn91J<0
 R6
 32
-R43
+R61
 !i10b 1
-R44
-Z61 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/half_adder.vhd|
-Z62 !s107 C:/HardwareLab/Blatt6/half_adder.vhd|
+R62
+Z79 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/half_adder.vhd|
+Z80 !s107 C:/HardwareLab/Blatt6/half_adder.vhd|
 !i113 1
 R7
 R8
@@ -373,33 +463,72 @@ Astructure
 R2
 R3
 R4
-R30
+R51
 l16
 L14
 VWa3OPELSEzUB@IKS8oPTW0
 !s100 EKQX?Ode17mjHQn1i>kiQ1
 R6
 32
-R43
-!i10b 1
-R44
 R61
+!i10b 1
 R62
+R79
+R80
+!i113 1
+R7
+R8
+Ereg
+Z81 w1479745088
+R3
+R4
+R0
+Z82 8C:/HardwareLab/Blatt6/reg.vhd
+Z83 FC:/HardwareLab/Blatt6/reg.vhd
+l0
+L4
+V`3[mDRm=HM;e[ceKLP6K82
+!s100 =mkKOOTSNh<E:YFo4mZo33
+R6
+32
+Z84 !s110 1482867451
+!i10b 1
+Z85 !s108 1482867451.000000
+Z86 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/reg.vhd|
+Z87 !s107 C:/HardwareLab/Blatt6/reg.vhd|
+!i113 1
+R7
+R8
+Abehave
+R3
+R4
+R24
+l14
+L13
+V5@YjKlWDMO75@zJ?HQ:FF3
+!s100 4C>>NJ24Sge?@hOPgQ7dg0
+R6
+32
+R84
+!i10b 1
+R85
+R86
+R87
 !i113 1
 R7
 R8
 Ptb_tools
 R15
-R32
+R29
 R1
-R33
+R27
 R2
 R4
 R3
 R5
 R0
-Z63 8C:/HardwareLab/Blatt6/TB_Tools.vhd
-Z64 FC:/HardwareLab/Blatt6/TB_Tools.vhd
+Z88 8C:/HardwareLab/Blatt6/TB_Tools.vhd
+Z89 FC:/HardwareLab/Blatt6/TB_Tools.vhd
 l0
 L34
 V[7b^Hh=CE:nNI0TgF2JHA0
@@ -407,20 +536,20 @@ V[7b^Hh=CE:nNI0TgF2JHA0
 R6
 32
 b1
-Z65 !s110 1482794209
+Z90 !s110 1482794209
 !i10b 1
-Z66 !s108 1482794209.000000
-Z67 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/TB_Tools.vhd|
-Z68 !s107 C:/HardwareLab/Blatt6/TB_Tools.vhd|
+Z91 !s108 1482794209.000000
+Z92 !s90 -reportprogress|300|-work|work|C:/HardwareLab/Blatt6/TB_Tools.vhd|
+Z93 !s107 C:/HardwareLab/Blatt6/TB_Tools.vhd|
 !i113 1
 R7
 R8
 Bbody
-R34
+R28
 R15
-R32
+R29
 R1
-R33
+R27
 R2
 R4
 R3
@@ -430,76 +559,76 @@ V24PoAL@K2dA<aN6JfhBak0
 !s100 l<_bzm7B1U7n6Go>oIei:3
 R6
 32
-R65
+R90
 !i10b 1
-R66
-R67
-R68
+R91
+R92
+R93
 !i113 1
 R7
 R8
 R16
 Ethree_bit_adder
-Z69 w1482778063
+Z94 w1482778063
 R2
 R3
 R4
 R0
-Z70 8C:/HardwareLab/Blatt6/three_bit_adder.vhd
-Z71 FC:/HardwareLab/Blatt6/three_bit_adder.vhd
+Z95 8C:/HardwareLab/Blatt6/three_bit_adder.vhd
+Z96 FC:/HardwareLab/Blatt6/three_bit_adder.vhd
 l0
 L5
 VQ`Ch5e?XkbQCjnIJ3mW=53
 !s100 :XFb?ZY:BGLc`Y``nhl;G2
 R6
 32
-R43
+R61
 !i10b 1
-R44
-Z72 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/three_bit_adder.vhd|
-Z73 !s107 C:/HardwareLab/Blatt6/three_bit_adder.vhd|
+R62
+Z97 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/three_bit_adder.vhd|
+Z98 !s107 C:/HardwareLab/Blatt6/three_bit_adder.vhd|
 !i113 1
 R7
 R8
 Astructure
-R52
+R70
 R2
 R3
 R4
-R28
+R49
 l19
 L14
 VRa29ZlkLI`3V_[>i96MM[3
 !s100 N=fOjH=KUG;<eFEKmV7961
 R6
 32
-R43
+R61
 !i10b 1
-R44
-R72
-R73
+R62
+R97
+R98
 !i113 1
 R7
 R8
 Etwo_bit_adder
-Z74 w1482704763
+Z99 w1482704763
 R2
 R3
 R4
 R0
-Z75 8C:/HardwareLab/Blatt6/two_bit_adder.vhd
-Z76 FC:/HardwareLab/Blatt6/two_bit_adder.vhd
+Z100 8C:/HardwareLab/Blatt6/two_bit_adder.vhd
+Z101 FC:/HardwareLab/Blatt6/two_bit_adder.vhd
 l0
 L5
 Va@P:K99@KQSKi2J;aR5Ua2
 !s100 ?TLW:;4_Gg<2m_I_0N6<@2
 R6
 32
-R43
+R61
 !i10b 1
-R44
-Z77 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/two_bit_adder.vhd|
-Z78 !s107 C:/HardwareLab/Blatt6/two_bit_adder.vhd|
+R62
+Z102 !s90 -reportprogress|30|-work|work|C:/HardwareLab/Blatt6/two_bit_adder.vhd|
+Z103 !s107 C:/HardwareLab/Blatt6/two_bit_adder.vhd|
 !i113 1
 R7
 R8
@@ -507,18 +636,18 @@ Astructure
 R2
 R3
 R4
-R29
+R50
 l16
 L14
 V=JS6==j0JbPoAh7LK2XTV0
 !s100 P1PSJ_UPLQbRWk6l=]hQJ1
 R6
 32
-R43
+R61
 !i10b 1
-R44
-R77
-R78
+R62
+R102
+R103
 !i113 1
 R7
 R8

@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -o
+ArmRegisterBitAdder.twr -v 30 -l 30 ArmRegisterBitAdder_routed.ncd
+ArmRegisterBitAdder.pcf
+
+Design file:              ArmRegisterBitAdder_routed.ncd
+Physical constraint file: ArmRegisterBitAdder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report, limited to 30 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+-----------------+---------+
+Source Pad     |Destination Pad  |  Delay  |
+---------------+-----------------+---------+
+RBA_REGLIST[0] |RBA_NR_OF_REGS[0]|    8.146|
+RBA_REGLIST[0] |RBA_NR_OF_REGS[1]|    9.795|
+RBA_REGLIST[0] |RBA_NR_OF_REGS[2]|    9.934|
+RBA_REGLIST[0] |RBA_NR_OF_REGS[3]|   11.462|
+RBA_REGLIST[0] |RBA_NR_OF_REGS[4]|   11.638|
+RBA_REGLIST[1] |RBA_NR_OF_REGS[0]|    7.513|
+RBA_REGLIST[1] |RBA_NR_OF_REGS[1]|    9.162|
+RBA_REGLIST[1] |RBA_NR_OF_REGS[2]|    9.301|
+RBA_REGLIST[1] |RBA_NR_OF_REGS[3]|   10.829|
+RBA_REGLIST[1] |RBA_NR_OF_REGS[4]|   11.005|
+RBA_REGLIST[2] |RBA_NR_OF_REGS[0]|    8.165|
+RBA_REGLIST[2] |RBA_NR_OF_REGS[1]|    9.814|
+RBA_REGLIST[2] |RBA_NR_OF_REGS[2]|    9.953|
+RBA_REGLIST[2] |RBA_NR_OF_REGS[3]|   11.481|
+RBA_REGLIST[2] |RBA_NR_OF_REGS[4]|   11.657|
+RBA_REGLIST[3] |RBA_NR_OF_REGS[0]|    7.837|
+RBA_REGLIST[3] |RBA_NR_OF_REGS[1]|    9.486|
+RBA_REGLIST[3] |RBA_NR_OF_REGS[2]|    9.625|
+RBA_REGLIST[3] |RBA_NR_OF_REGS[3]|   11.153|
+RBA_REGLIST[3] |RBA_NR_OF_REGS[4]|   11.329|
+RBA_REGLIST[4] |RBA_NR_OF_REGS[0]|    7.404|
+RBA_REGLIST[4] |RBA_NR_OF_REGS[1]|    9.915|
+RBA_REGLIST[4] |RBA_NR_OF_REGS[2]|    9.976|
+RBA_REGLIST[4] |RBA_NR_OF_REGS[3]|   11.504|
+RBA_REGLIST[4] |RBA_NR_OF_REGS[4]|   11.680|
+RBA_REGLIST[5] |RBA_NR_OF_REGS[0]|    7.474|
+RBA_REGLIST[5] |RBA_NR_OF_REGS[1]|    9.985|
+RBA_REGLIST[5] |RBA_NR_OF_REGS[2]|   10.046|
+RBA_REGLIST[5] |RBA_NR_OF_REGS[3]|   11.574|
+RBA_REGLIST[5] |RBA_NR_OF_REGS[4]|   11.750|
+RBA_REGLIST[6] |RBA_NR_OF_REGS[0]|    7.971|
+RBA_REGLIST[6] |RBA_NR_OF_REGS[1]|   10.482|
+RBA_REGLIST[6] |RBA_NR_OF_REGS[2]|   10.543|
+RBA_REGLIST[6] |RBA_NR_OF_REGS[3]|   12.071|
+RBA_REGLIST[6] |RBA_NR_OF_REGS[4]|   12.247|
+RBA_REGLIST[7] |RBA_NR_OF_REGS[0]|    8.428|
+RBA_REGLIST[7] |RBA_NR_OF_REGS[1]|   10.939|
+RBA_REGLIST[7] |RBA_NR_OF_REGS[2]|   11.000|
+RBA_REGLIST[7] |RBA_NR_OF_REGS[3]|   12.528|
+RBA_REGLIST[7] |RBA_NR_OF_REGS[4]|   12.704|
+RBA_REGLIST[8] |RBA_NR_OF_REGS[0]|    7.306|
+RBA_REGLIST[8] |RBA_NR_OF_REGS[1]|    9.286|
+RBA_REGLIST[8] |RBA_NR_OF_REGS[2]|    9.362|
+RBA_REGLIST[8] |RBA_NR_OF_REGS[3]|   10.847|
+RBA_REGLIST[8] |RBA_NR_OF_REGS[4]|   11.023|
+RBA_REGLIST[9] |RBA_NR_OF_REGS[0]|    7.695|
+RBA_REGLIST[9] |RBA_NR_OF_REGS[1]|    9.675|
+RBA_REGLIST[9] |RBA_NR_OF_REGS[2]|    9.582|
+RBA_REGLIST[9] |RBA_NR_OF_REGS[3]|   11.110|
+RBA_REGLIST[9] |RBA_NR_OF_REGS[4]|   11.286|
+RBA_REGLIST[10]|RBA_NR_OF_REGS[0]|    7.650|
+RBA_REGLIST[10]|RBA_NR_OF_REGS[1]|    9.630|
+RBA_REGLIST[10]|RBA_NR_OF_REGS[2]|    9.537|
+RBA_REGLIST[10]|RBA_NR_OF_REGS[3]|   11.065|
+RBA_REGLIST[10]|RBA_NR_OF_REGS[4]|   11.241|
+RBA_REGLIST[11]|RBA_NR_OF_REGS[0]|    7.562|
+RBA_REGLIST[11]|RBA_NR_OF_REGS[1]|    9.542|
+RBA_REGLIST[11]|RBA_NR_OF_REGS[2]|    9.449|
+RBA_REGLIST[11]|RBA_NR_OF_REGS[3]|   10.977|
+RBA_REGLIST[11]|RBA_NR_OF_REGS[4]|   11.153|
+RBA_REGLIST[12]|RBA_NR_OF_REGS[0]|    8.089|
+RBA_REGLIST[12]|RBA_NR_OF_REGS[1]|    9.229|
+RBA_REGLIST[12]|RBA_NR_OF_REGS[2]|    9.101|
+RBA_REGLIST[12]|RBA_NR_OF_REGS[3]|   10.629|
+RBA_REGLIST[12]|RBA_NR_OF_REGS[4]|   10.805|
+RBA_REGLIST[13]|RBA_NR_OF_REGS[0]|    8.404|
+RBA_REGLIST[13]|RBA_NR_OF_REGS[1]|    9.544|
+RBA_REGLIST[13]|RBA_NR_OF_REGS[2]|    9.416|
+RBA_REGLIST[13]|RBA_NR_OF_REGS[3]|   10.944|
+RBA_REGLIST[13]|RBA_NR_OF_REGS[4]|   11.120|
+RBA_REGLIST[14]|RBA_NR_OF_REGS[0]|    8.469|
+RBA_REGLIST[14]|RBA_NR_OF_REGS[1]|    9.609|
+RBA_REGLIST[14]|RBA_NR_OF_REGS[2]|    9.481|
+RBA_REGLIST[14]|RBA_NR_OF_REGS[3]|   11.009|
+RBA_REGLIST[14]|RBA_NR_OF_REGS[4]|   11.185|
+RBA_REGLIST[15]|RBA_NR_OF_REGS[0]|    8.896|
+RBA_REGLIST[15]|RBA_NR_OF_REGS[1]|   10.036|
+RBA_REGLIST[15]|RBA_NR_OF_REGS[2]|    9.908|
+RBA_REGLIST[15]|RBA_NR_OF_REGS[3]|   11.436|
+RBA_REGLIST[15]|RBA_NR_OF_REGS[4]|   11.612|
+---------------+-----------------+---------+
+
+
+Analysis completed Tue Dec 27 16:26:24 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 164 MB
+
+
+

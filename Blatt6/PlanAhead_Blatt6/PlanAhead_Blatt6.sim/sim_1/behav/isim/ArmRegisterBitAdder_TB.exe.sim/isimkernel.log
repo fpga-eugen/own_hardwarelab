@@ -1,0 +1,28 @@
+Command line:
+   ArmRegisterBitAdder_TB.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51148
+
+Tue Dec 27 16:01:17 2016
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 668.877 Meg
+
+ Total Signals          : 131
+ Total Nets             : 517
+ Total Signal Drivers   : 66
+ Total Blocks           : 49
+ Total Primitive Blocks : 30
+ Total Processes        : 66
+ Total Traceable Variables  : 249
+ Total Scalar Nets and Variables : 5029
+Total Line Count : 87
+
+** Failure: EOT (END OF TEST) - Diese Fehlermeldung stoppt den Simulator unabhaengig von tatsaechlich aufgetretenen Fehlern!
+User(VHDL) Code Called Simulation Stop
+In process ArmRegisterBitAdder_tb.vhd:tb 
+ 
+

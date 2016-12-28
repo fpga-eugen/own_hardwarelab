@@ -1,0 +1,1 @@
+-intstyle "pa" -incremental -L "work" -o "ArmRegisterBitAdder_TB.exe" --prj "C:/HardwareLab/Blatt6/PlanAhead_Blatt6/PlanAhead_Blatt6.sim/sim_1/behav/ArmRegisterBitAdder_TB.prj" -top "work.ArmRegisterBitAdder_TB" 

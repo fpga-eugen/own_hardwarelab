@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn ArmRegisterBitAdder.prj
+-top ArmRegisterBitAdder
+-p xc3s500efg320-4
+-ofn ArmRegisterBitAdder.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt
