@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- 	Barrelshifter fuer LSL, LSR, ASR, ROR mit Shiftweiten von 0 bis 3 (oder
---	generisch n-1) Bit.
+-- 	Barrelshifter fuer LSL, LSR, ASR, ROR mit Shiftweiten von 0 bis 3 (oder 
+--	generisch n-1) Bit. 
 --------------------------------------------------------------------------------
 --	Datum:		03.06.2014
 --	Version:	0.KEEP.SMILE
@@ -21,12 +21,12 @@ entity ArmBarrelShifter is
 	generic (OPERAND_WIDTH : integer := 32;
 			 SHIFTER_DEPTH : integer := 5 --ceil(log(2, OPERAND_WIDTH))
 	 );
-	port ( 	OPERAND 	: in std_logic_vector(OPERAND_WIDTH-1 downto 0);
+	port ( 	OPERAND 	: in std_logic_vector(OPERAND_WIDTH-1 downto 0);	
     		MUX_CTRL 	: in std_logic_vector(1 downto 0);
-    		AMOUNT 		: in std_logic_vector(SHIFTER_DEPTH-1 downto 0);
-    		ARITH_SHIFT : in std_logic;
+    		AMOUNT 		: in std_logic_vector(SHIFTER_DEPTH-1 downto 0);	
+    		ARITH_SHIFT : in std_logic; 
     		C_IN 		: in std_logic;
-           	DATA_OUT 	: out std_logic_vector(OPERAND_WIDTH-1 downto 0);
+           	DATA_OUT 	: out std_logic_vector(OPERAND_WIDTH-1 downto 0);	
     		C_OUT 		: out std_logic
 	);
 end entity ArmBarrelShifter;
@@ -59,7 +59,7 @@ begin
 					SEL => MUX_CTRL,
 					OUTPUT => depth_stage_out(depth)(width)
 				);
-
+				
 				stage_bit_right_rot_out: entity work.Mux2
 				port map (
 					IN0 => depth_stage_out(depth-1)(width),
@@ -67,7 +67,7 @@ begin
 					SEL => AMOUNT(SHIFTER_DEPTH - depth),
 					OUTPUT => depth_stage_right_rot_out(depth)(width)
 				);
-
+				
 				-- stage_bit_left_sift
 				stage_bit_left_shift1_gen: if (width - (2 ** (SHIFTER_DEPTH - depth))) >= 0 generate
 				begin
@@ -76,10 +76,10 @@ begin
 						IN0 => depth_stage_out(depth-1)(width),
 						IN1 => depth_stage_out(depth-1)(width - (2 ** (SHIFTER_DEPTH - depth))),
 						SEL => AMOUNT(SHIFTER_DEPTH - depth),
-						OUTPUT => depth_stage_left_shift_out(depth)(width)
+						OUTPUT => depth_stage_left_shift_out(depth)(width) 
 					);
 				end generate;
-
+				
 				stage_bit_left_shift2_gen: if (width - (2 ** (SHIFTER_DEPTH - depth))) < 0 generate
 				begin
 					stage_bit_left_shift2: entity work.Mux2
@@ -87,10 +87,10 @@ begin
 						IN0 => depth_stage_out(depth-1)(width),
 						IN1 => '0',
 						SEL => AMOUNT(SHIFTER_DEPTH - depth),
-						OUTPUT => depth_stage_left_shift_out(depth)(width)
+						OUTPUT => depth_stage_left_shift_out(depth)(width) 
 					);
 				end generate;
-
+				
 				--if ((width - (1 sll (SHIFTER_DEPTH - depth))) < 0) and () generate
 				--begin
 				--	stage_bit_left_shift2: entity work.Mux2
@@ -98,10 +98,10 @@ begin
 				--		IN0 => depth_stage_out(depth-1)(width),
 				--		IN1 => ,
 				--		SEL => AMOUNT(SHIFTER_DEPTH - depth),
-				--		OUTPUT => depth_stage_left_shift_out(depth)(width)
+				--		OUTPUT => depth_stage_left_shift_out(depth)(width) 
 				--	);
 				--end generate;
-
+				
 				-- stage_bit_right_shift
 				stage_bit_right_shift1_gen: if (width + (2 ** (SHIFTER_DEPTH - depth))) < OPERAND_WIDTH generate
 				begin
@@ -113,7 +113,7 @@ begin
 						OUTPUT => depth_stage_right_shift_out(depth)(width)
 					);
 				end generate;
-
+				
 				stage_bit_right_shift2_gen: if (width + (2 ** (SHIFTER_DEPTH - depth))) >= OPERAND_WIDTH generate
 				begin
 					stage_bit_right_shift2_select_arith: entity work.Mux2
@@ -123,7 +123,7 @@ begin
 						SEL => ARITH_SHIFT,
 						OUTPUT => depth_stage_right_shift_out(depth)(width)
 					);
-
+					
 					stage_bit_right_shift2: entity work.Mux2
 					port map (
 						IN0 => depth_stage_out(depth-1)(width),
@@ -131,7 +131,7 @@ begin
 						SEL => AMOUNT(SHIFTER_DEPTH - depth),
 						OUTPUT => depth_stage_right_shift_no_arith(depth)(width)
 					);
-
+					
 					stage_bit_right_shift2_arith: entity work.Mux2
 					port map (
 						IN0 => depth_stage_out(depth-1)(width),
@@ -141,7 +141,7 @@ begin
 					);
 				end generate;
 			end generate;
-
+			
 			------- CARRY STAGE -----------
 			-- Laut HIGHLVL Shifter muss sich das C_OUT wie folgt verhalten:
 			-- 1. when AMOUNT = 0 => C_OUT <= C_IN
@@ -157,10 +157,10 @@ begin
 			--
 			--           if (MUX_CTRL = "11" (Rechtsrotation)) then
 			--             C_OUT <= Carry ist das letzte hereinrotierte
-      --					                 Bit, also das ganz links, sofern um wenigstens
+      --					                 Bit, also das ganz links, sofern um wenigstens 
       --					                 eine Stelle geschoben wurde
-
-
+			
+			
 			stage_carry_out_right_shift: entity work.Mux2
 			port map (
 				IN0 => depth_stage_carry_out_right_shift(depth-1),
@@ -168,7 +168,7 @@ begin
 				SEL => AMOUNT(SHIFTER_DEPTH - depth),
 				OUTPUT => depth_stage_carry_out_right_shift(depth)
 			);
-
+			
 			stage_carry_out_left_shift: entity work.Mux2
 			port map (
 				IN0 => depth_stage_carry_out_left_shift(depth-1),
@@ -177,18 +177,19 @@ begin
 				OUTPUT => depth_stage_carry_out_left_shift(depth)
 			);
 		end generate;
-
+		
 		C_OUT <=	 C_IN when (unsigned(AMOUNT) = 0) else
 		          C_IN when ((unsigned(AMOUNT) /= 0) and (MUX_CTRL = "00")) else
 					    depth_stage_carry_out_left_shift(SHIFTER_DEPTH) when ((unsigned(AMOUNT) /= 0) and (MUX_CTRL = "01")) else
 					    depth_stage_carry_out_right_shift(SHIFTER_DEPTH) when ((unsigned(AMOUNT) /= 0) and (MUX_CTRL = "10"))else
 					    depth_stage_out(SHIFTER_DEPTH)(OPERAND_WIDTH-1); --when ((unsigned(AMOUNT) /= 0) and (MUX_CTRL = "11"));
-
+		
 		depth_stage_carry_out_left_shift(0) <= C_IN;
 		depth_stage_carry_out_right_shift(0) <= C_IN;
-
+		
 		depth_stage_out(0) <= OPERAND;
 		DATA_OUT <= depth_stage_out(SHIFTER_DEPTH);
-
+		
 
 end architecture structure;
+
