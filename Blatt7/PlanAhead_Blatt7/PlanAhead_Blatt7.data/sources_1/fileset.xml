@@ -10,33 +10,33 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Blatt7/mux2.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../mux2.vhd"/>
-        <Attr Name="ImportTime" Val="1483117696"/>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInSimulation" Val="1"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/Blatt7/mux3.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../mux3.vhd"/>
-        <Attr Name="ImportTime" Val="1483046585"/>
+        <Attr Name="ImportTime" Val="1483200861"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Blatt7/ArmBarrelShifter.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Blatt7/mux2.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ArmBarrelShifter.vhd"/>
-        <Attr Name="ImportTime" Val="1483122423"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../mux2.vhd"/>
+        <Attr Name="ImportTime" Val="1483207330"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt7/ArmBarrelShifter_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmBarrelShifter_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1483381990"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ArmBarrelShifter"/>
+      <Option Name="TopModule" Val="ArmBarrelShifter_4bit"/>
     </Config>
   </FileSet>
 </DARoots>

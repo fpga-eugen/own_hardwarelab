@@ -3,10 +3,10 @@
   <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ArmBarrelShifter"/>
+      <Option Name="TopModule" Val="ArmBarrelShifter_4bit"/>
       <Option Name="TopLib" Val="work"/>
       <Option Name="TopArchitecture" Val="structure"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Blatt7/ArmBarrelShifter.vhd"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Blatt7/ArmBarrelShifter_4bit.vhd"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
       <Option Name="SrcSet" Val="sources_1"/>
     </Config>

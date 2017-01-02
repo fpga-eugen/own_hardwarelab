@@ -16,5 +16,5 @@ architecture structure of mux3 is
 begin
 	OUTPUT <=	IN0 when SEL = "00" else
 				IN1 when SEL = "01" else
-				IN2;
+				IN2 when SEL = "10" or SEL = "11";
 end architecture;

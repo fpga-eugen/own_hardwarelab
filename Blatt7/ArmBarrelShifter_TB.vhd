@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
---	Testbench fuer den allgemeinen n-Bit-Shifter. Getestet wird die selbst 
+--	Testbench fuer den allgemeinen n-Bit-Shifter. Getestet wird die selbst
 --	implementierte, strukturelle Architektur gegen die vorgegebene Verhaltens-
 --	beschreibung.
 ----------------------------------------------------------------------------------
@@ -16,11 +16,11 @@ library work;
 use work.TB_Tools.all;
 
 entity ArmBarrelShifter_tb is
-	generic(	
+	generic(
 		OPERAND_WIDTH	: integer := 32;
 		AMOUNT_WIDTH	: integer := 5;
 --------------------------------------------------------------------------------
---	Die Testbench bricht bei Ueberschreiten folgender Fehlergrenze ab. 
+--	Die Testbench bricht bei Ueberschreiten folgender Fehlergrenze ab.
 --	Bei Fehlergrenze 0 werden alle Tests durchgefuehrt und alle Fehler
 --	ausgegeben.
 --------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ entity ArmBarrelShifter_tb is
 	 );
 end entity ArmBarrelShifter_tb;
 
-architecture behave of ArmBarrelShifter_tb is 
+architecture behave of ArmBarrelShifter_tb is
 
 	component ArmBarrelShifter_HILEVEL
 	generic(
@@ -51,7 +51,7 @@ architecture behave of ArmBarrelShifter_tb is
 		MUX_CTRL	: in std_logic_vector(1 downto 0);
 		AMOUNT		: in std_logic_vector(AMOUNT_WIDTH-1 downto 0);
 		ARITH_SHIFT : in std_logic;
-		C_IN		: in std_logic;          
+		C_IN		: in std_logic;
 		DATA_OUT	: out std_logic_vector(OPERAND_WIDTH-1 downto 0);
 		C_OUT		: out std_logic
 	);
@@ -61,13 +61,13 @@ architecture behave of ArmBarrelShifter_tb is
 	generic(
 		OPERAND_WIDTH : integer;
 		SHIFTER_DEPTH : integer
-	);	
+	);
 	port(
 		    OPERAND		: in std_logic_vector(31 downto 0);
 		    MUX_CTRL	: in std_logic_vector(1 downto 0);
 		    AMOUNT		: in std_logic_vector(4 downto 0);
 		    ARITH_SHIFT : in std_logic;
-		    C_IN		: in std_logic;          
+		    C_IN		: in std_logic;
 		    DATA_OUT	: out std_logic_vector(31 downto 0);
 		    C_OUT		: out std_logic
 	    );
@@ -78,7 +78,7 @@ architecture behave of ArmBarrelShifter_tb is
 	signal	MUX_CTRL	: std_logic_vector(1 downto 0)	:= "00";
 	signal	AMOUNT		: std_logic_vector(AMOUNT_WIDTH-1 downto 0) := (others => '0');
 	signal	ARITH_SHIFT	: std_logic_vector(0 downto 0) := "0";
-	signal	C_IN		: std_logic_vector(0 downto 0) := "0";          
+	signal	C_IN		: std_logic_vector(0 downto 0) := "0";
 	signal	DATA_OUT_BEHAVE	: std_logic_vector(OPERAND_WIDTH-1 downto 0);
 	signal	C_OUT_BEHAVE	: std_logic;
 	signal	DATA_OUT_STRUCT	: std_logic_vector(OPERAND_WIDTH-1 downto 0);
@@ -106,7 +106,7 @@ begin
 			C_IN		=> C_IN(0),
 			DATA_OUT	=> DATA_OUT_STRUCT,
 			C_OUT		=> C_OUT_STRUCT
-		); 
+		);
 	INST_HILEVEL: ArmBarrelShifter_HILEVEL
 	generic map(
 			   OPERAND_WIDTH => 32,
@@ -120,13 +120,13 @@ begin
 			C_IN		=> C_IN(0),
 			DATA_OUT	=> DATA_OUT_BEHAVE,
 			C_OUT		=> C_OUT_BEHAVE
-		); 
+		);
 
 
 	tb : process
 		constant TESTDATA_PATH			: string  := TESTDATA_FOLDER_PATH & "BARRELSHIFTER_TESTDATA";
 		file TESTDATA_FILE			: text open read_mode is TESTDATA_PATH;
-		variable DATA_LINE			: line; 
+		variable DATA_LINE			: line;
 		variable IS_COMMENT			: boolean := false;
 		variable SLV_VAR			: std_logic_vector(OPERAND'length-1 downto 0);
 		variable errors_encountered		: integer := 0;
@@ -140,7 +140,7 @@ begin
 		variable V_AMOUNT 			: std_logic_vector(AMOUNT_WIDTH -1 downto 0) := (others => '0');
 		variable V_VALUE 			: std_logic_vector(OPERAND_WIDTH -1 downto 0) := (others => '0');
 		variable RESULT_ERROR, C_ERROR		: boolean := FALSE;
-		
+
 
 --	Procedure fuer Test der Ergebnisse und Ausgabe der vollstaendigen Fehlermeldung
 		procedure REPORT_BARRELSHIFTER_OPERATION is
@@ -159,11 +159,11 @@ begin
 				report "Fehler aufgetreten..." severity error;
 				errors_encountered := errors_encountered + 1;
 				if RESULT_ERROR then assert FALSE report "Ergebnis fehlerhaft" severity note; end if;
-				if C_ERROR then assert FALSE report "Carry fehlerhaft" severity note; end if;			 
+				if C_ERROR then assert FALSE report "Carry fehlerhaft" severity note; end if;
 				report TAB_CHAR & "MUX_CTRL: "	& TAB_CHAR & SLV_TO_STRING(MUX_CTRL) & " = " & TAB_CHAR & MUX_CTRL_NAMES(to_integer(unsigned(MUX_CTRL)));
 				report TAB_CHAR & "OPERAND: "	& TAB_CHAR & SLV_TO_STRING(OPERAND);
 				report TAB_CHAR & "AMOUNT: "	& TAB_CHAR & SLV_TO_STRING(AMOUNT) & " = " & TAB_CHAR & integer'image(to_integer(unsigned(AMOUNT)));
-				report TAB_CHAR & "ARITH: "	& TAB_CHAR & TAB_CHAR & SLV_TO_STRING(ARITH_SHIFT);				
+				report TAB_CHAR & "ARITH: "	& TAB_CHAR & TAB_CHAR & SLV_TO_STRING(ARITH_SHIFT);
 				report TAB_CHAR & "C_IN: "	& TAB_CHAR & TAB_CHAR & SLV_TO_STRING(C_IN);
 				report " ";
 				if RESULT_ERROR then
@@ -173,11 +173,11 @@ begin
 				if C_ERROR then
 					report TAB_CHAR & "C_OUT der Referenz: " & TAB_CHAR & SL_TO_STRING(C_OUT_BEHAVE);
 					report TAB_CHAR & "Ermitteltes C_OUT: " & TAB_CHAR & TAB_CHAR & SL_TO_STRING(C_OUT_STRUCT);
-				end if;			
+				end if;
 				report SEPARATOR_LINE;
 			end if;
 		end procedure;
-		
+
 	begin
 
 --	Die Schiebeweite kann bei 5 Bit breiter Werteangabe 0 bis 31 Bit betragen
@@ -200,7 +200,7 @@ begin
 		report SEPARATOR_LINE;
 		report "Initialisierung aller Stimuli, anschliessend Aenderung einzelner Signale...";
 		report SEPARATOR_LINE;
-		OPERAND <= X"F0000001"; MUX_CTRL <= "00"; ARITH_SHIFT <= "0"; C_IN <= "0"; AMOUNT <= "00001"; 
+		OPERAND <= X"F0000001"; MUX_CTRL <= "00"; ARITH_SHIFT <= "0"; C_IN <= "0"; AMOUNT <= "00001";
 		wait for WORKING_DELAY;
 		REPORT_BARRELSHIFTER_OPERATION;
 		report SEPARATOR_LINE;
@@ -215,7 +215,7 @@ begin
 		REPORT_BARRELSHIFTER_OPERATION;
 		report SEPARATOR_LINE;
 		report "Aenderung von ARITH_SHIFT";
-	       	ARITH_SHIFT <= "1";	
+	       	ARITH_SHIFT <= "1";
 		wait for WORKING_DELAY;
 		REPORT_BARRELSHIFTER_OPERATION;
 		report SEPARATOR_LINE;
@@ -239,28 +239,28 @@ begin
 		report SEPARATOR_LINE;
 		report SEPARATOR_LINE;
 		report "Ruecksetzen aller Stimuli.";
-		OPERAND <= X"00000000"; MUX_CTRL <= "00"; ARITH_SHIFT <= "0"; C_IN <= "0"; AMOUNT <= "00000"; 
+		OPERAND <= X"00000000"; MUX_CTRL <= "00"; ARITH_SHIFT <= "0"; C_IN <= "0"; AMOUNT <= "00000";
 		RESULT_ERRORS := 0; C_ERRORS := 0;
 		wait for WORKING_DELAY;
 		report SEPARATOR_LINE;
 		report SEPARATOR_LINE;
-		report SEPARATOR_LINE;	
+		report SEPARATOR_LINE;
 		report SEPARATOR_LINE;
 		report " ";
 		report " ";
 
 --------------------------------------------------------------------------------
---		optional: Test aller Operationen auf beliebig vielen Operanden 
+--		optional: Test aller Operationen auf beliebig vielen Operanden
 --		von 0 bis (2^32)-1, ermoeglicht bei Bedarf Test aller Stimuli-
 --		kombinationen
 --------------------------------------------------------------------------------
 		if CHECK_ALL then
-			report SEPARATOR_LINE;	
+			report SEPARATOR_LINE;
 			report "Teste Operanden zwischen 0 und " & integer'image(VALUE_MAX) & " mit allen moeglichen Operationen und Schiebe-/Rotationsweiten";
-			report SEPARATOR_LINE;	
-			report SEPARATOR_LINE;				
+			report SEPARATOR_LINE;
+			report SEPARATOR_LINE;
 			for value in VALUE_MIN to VALUE_MAX loop
-				for mux in 0 to 3 loop		
+				for mux in 0 to 3 loop
 					for arith in 0 to 1 loop
 						-- Test mit Carry-Bit = 0/1
 						for carry in 0 to 1 loop
@@ -275,7 +275,7 @@ begin
 								ARITH_SHIFT	<= V_ARITH;
 								C_IN		<= V_CARRY;
 								AMOUNT		<= V_AMOUNT;
-								OPERAND 	<= V_VALUE;--							
+								OPERAND 	<= V_VALUE;--
 								wait for WORKING_DELAY;
 								REPORT_BARRELSHIFTER_OPERATION;
 								ITERATIONS := ITERATIONS + 1;
@@ -283,7 +283,7 @@ begin
 	--							Shifterausgaenge neutralisieren
 								OPERAND <= (others => '0'); MUX_CTRL <= (others => '0'); AMOUNT <= (others => '0'); C_IN <= (others => '0'); ARITH_SHIFT <= (others => '0');
 								wait for WORKING_DELAY/2;
---								schlaegt eine Operation fuer eine Schiebeweite fehl ist es unwahrscheinlich, dass sie bei groesseren 
+--								schlaegt eine Operation fuer eine Schiebeweite fehl ist es unwahrscheinlich, dass sie bei groesseren
 --								Schiebeweiten wieder korrekt funktioniert => Abbruch der inneren Schleife
 								if C_ERROR or RESULT_ERROR then
 									report "Breche Schleife fuer AMOUNT ab und fahre mit der naechsten Kombination der uebrigen Testsignale fort.";
@@ -291,7 +291,7 @@ begin
 									exit LOOP_AMOUNT;
 								end if;
 
-							end loop LOOP_AMOUNT;					
+							end loop LOOP_AMOUNT;
 						end loop;
 					end loop;
 				end loop;
@@ -310,13 +310,13 @@ begin
 			errors_encountered := 0;
 			report " ";
 			report " ";
-		end if;	
+		end if;
 
 --------------------------------------------------------------------------------
 --		Test aller Operationen und Schiebeweiten auf Operanden
 --		aus einer Testvektordatei
 --------------------------------------------------------------------------------
-		
+
 
 -- Raum fuer gezielte Testoperanden, da natuerlich nicht mehr alle Faelle getestet werden koennen
 		report "Test mit spezifischen Operanden-Testvektoren aus der Testvektordatei, jeweils mit allen Optionen und Weiten." severity note;
@@ -333,7 +333,7 @@ begin
 				report "OPERAND: " & SLV_TO_STRING(V_VALUE);
 				report SEPARATOR_LINE;
 				report SEPARATOR_LINE;
-				for mux in 0 to 3 loop			
+				for mux in 0 to 3 loop
 					for arith in 0 to 1 loop
 						for carry in 0 to 1 loop
 							LOOP_AMOUNT_2 : for am in AMOUNT_MIN to AMOUNT_MAX loop
@@ -345,8 +345,8 @@ begin
 								MUX_CTRL	<= V_MUX_CTRL;
 								ARITH_SHIFT	<= V_ARITH;
 								C_IN		<= V_CARRY;
-								AMOUNT		<= V_AMOUNT;						
-								wait for WORKING_DELAY;						
+								AMOUNT		<= V_AMOUNT;
+								wait for WORKING_DELAY;
 								REPORT_BARRELSHIFTER_OPERATION;
 								ITERATIONS := ITERATIONS + 1;
 								assert (BREAK_ON_NUMBER_OF_ERRORS = 0) or (overall_errors_encountered <= BREAK_ON_NUMBER_OF_ERRORS) report "Breche Simulation wegen Ueberschreitung von mehr als " & natural'image(BREAK_ON_NUMBER_OF_ERRORS) & "  fehlerhaften Testdatensaetzen ab!" severity failure;
@@ -357,12 +357,12 @@ begin
 								report "Breche Schleife fuer AMOUNT ab und fahre mit der naechsten Kombination der uebrigen Testsignale fort.";
 								report SEPARATOR_LINE;
 								exit LOOP_AMOUNT_2;
-								end if;							
+								end if;
 							end loop LOOP_AMOUNT_2;
 						end loop;
 					end loop;
-				end loop;	
-			end if;	
+				end loop;
+			end if;
 		end loop;
 		FILE_CLOSE(TESTDATA_FILE);
 		report "Iterationen ueber Testvektoren aus der Testvektordatei ausgefuehrt: " & integer'image(ITERATIONS);
@@ -372,25 +372,25 @@ begin
 			report "Fehler ueber alle Datensaetze: " & integer'image(overall_errors_encountered) severity note;
 		else
 			report "Keine Fehler gefunden" severity note;
-		end if;	
+		end if;
 		report " ";
 		report " ";
 		report SEPARATOR_LINE;
 		report SEPARATOR_LINE;
 		if overall_errors_encountered = 0 then
-		      report "Funktionspruefung bestanden." severity note;	
+		      report "Funktionspruefung bestanden." severity note;
 	  	else
-		      report "Funktionspruefung nicht bestanden." severity error;	
-	       	end if;	       
+		      report "Funktionspruefung nicht bestanden." severity error;
+	       	end if;
 		report SEPARATOR_LINE;
 		report SEPARATOR_LINE;
-		report "...Ende der Simulation." severity note; 
+		report "...Ende der Simulation." severity note;
 		report " ";
 		report " ";
-		report " EOT (END OF TEST) - Diese Fehlermeldung stoppt den Simulator unabhaengig von tatsaechlich aufgetretenen Fehlern!" severity failure; 
+		report " EOT (END OF TEST) - Diese Fehlermeldung stoppt den Simulator unabhaengig von tatsaechlich aufgetretenen Fehlern!" severity failure;
 		wait; -- will wait forever
 	end process tb;
 
-	--  End Test Bench 
+	--  End Test Bench
 
 end architecture behave;

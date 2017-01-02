@@ -12,7 +12,7 @@ entity mux3 is
 end entity;
 
 
-architecture structure of mux4 is
+architecture structure of mux3 is
 begin
 	OUTPUT <=	IN0 when SEL = "00" else
 				IN1 when SEL = "01" else

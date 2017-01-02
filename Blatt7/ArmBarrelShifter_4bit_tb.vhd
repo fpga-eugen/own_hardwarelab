@@ -10,23 +10,7 @@ entity ArmBarrelShifter_4bit_tb is
 	generic(
 		OPERAND_WIDTH	: integer := 4;
 		AMOUNT_WIDTH	: integer := 2
---------------------------------------------------------------------------------
---	Die Testbench bricht bei Ueberschreiten folgender Fehlergrenze ab.
---	Bei Fehlergrenze 0 werden alle Tests durchgefuehrt und alle Fehler
---	ausgegeben.
---------------------------------------------------------------------------------
-		--BREAK_ON_NUMBER_OF_ERRORS : natural := 100;
---------------------------------------------------------------------------------
---	Bei Bedarf: Test aller Operationen auf allen Operanden von 0 bis n
---	(mit n = (2^32)-1)
---------------------------------------------------------------------------------
-		--CHECK_ALL	: boolean := TRUE;
---------------------------------------------------------------------------------
---	Statt aller 2^32 Operanden werden nur die ersten (2^32)/(2^TEST_DIVIDER)
---	Operanden getestet, TEST_DEVIDER ist zwingend eine Zweierpotenz
---------------------------------------------------------------------------------
-		--TEST_DIVIDER	: integer := 4
---------------------------------------------------------------------------------
+
 	 );
 end entity ArmBarrelShifter_4bit_tb;
 
@@ -48,7 +32,7 @@ architecture behave of ArmBarrelShifter_4bit_tb is
 --	);
 --	end component;
 
-	component ArmBarrelShifter
+	component ArmBarrelShifter_4bit
 	generic(
 		OPERAND_WIDTH : integer;
 		SHIFTER_DEPTH : integer
@@ -62,7 +46,7 @@ architecture behave of ArmBarrelShifter_4bit_tb is
 		    DATA_OUT	: out std_logic_vector(3 downto 0);
 		    C_OUT		: out std_logic
 	    );
-	end component ArmBarrelShifter;
+	end component ArmBarrelShifter_4bit;
 
   signal WORKING_DELAY_10 	: time 		:= 10 ns;
 --  signal WORKING_DELAY_20 	: time 		:= 20 ns;
@@ -79,7 +63,7 @@ architecture behave of ArmBarrelShifter_4bit_tb is
 	signal	C_OUT_STRUCT	: std_logic;
 
   begin
-  	INST_STRUCTURE: ArmBarrelShifter
+  	INST_STRUCTURE: ArmBarrelShifter_4bit
   	generic map(
   			   OPERAND_WIDTH => 4,
   			   SHIFTER_DEPTH => 2

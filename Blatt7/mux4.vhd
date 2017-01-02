@@ -18,5 +18,5 @@ begin
 	OUTPUT <=	IN0 when SEL = "00" else
 				IN1 when SEL = "01" else
 				IN2 when SEL = "10" else
-				IN3;
+				IN3 when SEL = "11";
 end architecture;
