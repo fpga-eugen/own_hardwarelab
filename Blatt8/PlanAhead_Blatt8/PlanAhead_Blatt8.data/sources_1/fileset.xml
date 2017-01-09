@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmTypes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmTypes.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmALU.vhd"/>
+        <Attr Name="ImportTime" Val="1483983207"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmMultiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmMultiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1483896927"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmConfiguration.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmConfiguration.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmALU_tb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmALU_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1482783980"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Blatt8/ArmFilePaths.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ArmFilePaths.vhd"/>
+        <Attr Name="ImportTime" Val="1389010937"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ArmALU"/>
+    </Config>
+  </FileSet>
+</DARoots>
